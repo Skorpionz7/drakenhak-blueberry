@@ -63,6 +63,11 @@
       "name": "dialog_type",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "close_x",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -446,6 +451,15 @@
             "=",
             "SceneWindowWidth()/2"
           ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetClosable"
+          },
+          "parameters": [
+            "no",
+            ""
+          ]
         }
       ]
     },
@@ -514,6 +528,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "AdvancedWindow::SetClosable"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Quit"
@@ -651,7 +674,16 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "AdvancedWindow::IsClosable"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": []
         }
       ]
