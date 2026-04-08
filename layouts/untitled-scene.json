@@ -199,8 +199,8 @@
       "name": "dialog_box",
       "persistentUuid": "6dcda2c9-9305-4ebb-84f5-5fb55ce5a80a",
       "width": 0,
-      "x": 928,
-      "y": -256,
+      "x": 1312,
+      "y": 864,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -671,20 +671,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AdvancedWindow::IsClosable"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": []
         }
       ]
     }
