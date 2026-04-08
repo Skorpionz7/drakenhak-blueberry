@@ -1,0 +1,758 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Untitled_32scene",
+  "name": "Untitled scene",
+  "r": 247,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 249,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 0.5836067708333331,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [
+    {
+      "name": "main_menu_buttons",
+      "objects": [
+        {
+          "name": "quit_game_button"
+        },
+        {
+          "name": "new_game_button"
+        },
+        {
+          "name": "load_game_button"
+        },
+        {
+          "name": "save_game_button"
+        },
+        {
+          "name": "continue_game"
+        },
+        {
+          "name": "options_button"
+        },
+        {
+          "name": "help_button"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "dialog_box_on",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dialog_type",
+      "type": "string",
+      "value": ""
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "quit_game_button",
+      "persistentUuid": "74a1f788-4355-4fc1-9d41-7402b38be227",
+      "width": 384,
+      "x": 502,
+      "y": 606,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 98,
+      "keepRatio": true,
+      "layer": "",
+      "name": "new_game_button",
+      "persistentUuid": "847a51f7-5bf0-44e2-8db2-a1b7ae4e9d27",
+      "width": 384,
+      "x": 502,
+      "y": 126,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "load_game_button",
+      "persistentUuid": "35047c15-44ee-42b8-83bf-e50a8c197ca7",
+      "width": 384,
+      "x": 502,
+      "y": 318,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 94,
+      "keepRatio": true,
+      "layer": "",
+      "name": "save_game_button",
+      "persistentUuid": "d777e286-f8b5-4b6e-9089-7a2977e68d2f",
+      "width": 384,
+      "x": 502,
+      "y": 224,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "continue_game",
+      "persistentUuid": "e1034e94-48db-4572-8560-8c9572c88d2b",
+      "width": 384,
+      "x": 502,
+      "y": 30,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "options_button",
+      "persistentUuid": "25e190a1-40d7-423d-bc9a-e3cddd3912c3",
+      "width": 384,
+      "x": 502,
+      "y": 414,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "help_button",
+      "persistentUuid": "0ba172d3-0996-4608-af40-02c434babd82",
+      "width": 384,
+      "x": 502,
+      "y": 510,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "dialog_box",
+      "persistentUuid": "6dcda2c9-9305-4ebb-84f5-5fb55ce5a80a",
+      "width": 0,
+      "x": 928,
+      "y": -256,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 832,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bg_sprite",
+      "persistentUuid": "9ddb4304-441f-4873-95f6-f2bb91d19596",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "quit_game_button",
+      "persistentUuid": "52f83da5-36cd-444e-9cd6-99dd11f1a821",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Quit",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "new_game_button",
+      "persistentUuid": "ab0a8d37-7470-447f-885e-7942e04ede80",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "New Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "load_game_button",
+      "persistentUuid": "33490e16-689c-41c4-b421-9fd5f53c134c",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Load Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "save_game_button",
+      "persistentUuid": "06a63ce8-39a0-4dde-88a7-e6c905a5ca31",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Save Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "continue_game",
+      "persistentUuid": "8751c37a-8c0f-43ba-9cde-08116bb861da",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Continue Game",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "options_button",
+      "persistentUuid": "3dfe9dd5-0900-4b2f-af53-2411295add28",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Options",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "help_button",
+      "persistentUuid": "049be661-eb1d-490c-966a-f53c754dd168",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Help",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
+      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
+      "name": "dialog_box",
+      "persistentUuid": "d11c980f-a2aa-4bf2-b9dd-783d00ea9ef2",
+      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
+      "variant": "Semi-transparent black and white",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bg_sprite",
+      "persistentUuid": "7ffab55b-31bd-4c64-8473-bacb83513bde",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/raspberries.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 960,
+                        "y": 0
+                      },
+                      {
+                        "x": 960,
+                        "y": 640
+                      },
+                      {
+                        "x": 0,
+                        "y": 640
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "continue_game"
+      },
+      {
+        "objectName": "new_game_button"
+      },
+      {
+        "objectName": "save_game_button"
+      },
+      {
+        "objectName": "load_game_button"
+      },
+      {
+        "objectName": "options_button"
+      },
+      {
+        "objectName": "help_button"
+      },
+      {
+        "objectName": "quit_game_button"
+      },
+      {
+        "objectName": "dialog_box"
+      },
+      {
+        "objectName": "bg_sprite"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "main_menu_buttons",
+            "=",
+            "SceneWindowWidth()/2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "dialog_box_on",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "dialog_box",
+            "=",
+            "SceneWindowWidth()/2",
+            "=",
+            "SceneWindowHeight()/2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsYesClicked"
+          },
+          "parameters": [
+            "dialog_box",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "dialog_type",
+                "=",
+                "\"quit\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "dialog_box",
+                "=",
+                "SceneWindowWidth()",
+                "=",
+                "SceneWindowHeight()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TwoChoicesDialogBoxes::TwoChoicesDialogBox::IsNoClicked"
+          },
+          "parameters": [
+            "dialog_box",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_box",
+            "=",
+            "SceneWindowWidth()",
+            "=",
+            "SceneWindowHeight()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "dialog_box_on",
+            "False",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "dialog_box_on",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "quit_game_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "dialog_type",
+                "=",
+                "\"quit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "dialog_box",
+                "Text",
+                "=",
+                "\"Quit Game? You will lose all unsaved progress.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "perspective",
+      "defaultCameraBehavior": "do-nothing",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    }
+  ]
+}
