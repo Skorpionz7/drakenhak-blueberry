@@ -53,23 +53,7 @@
       ]
     }
   ],
-  "variables": [
-    {
-      "name": "dialog_box_on",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "close_x",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "dialog_type",
-      "type": "string",
-      "value": ""
-    }
-  ],
+  "variables": [],
   "instances": [
     {
       "angle": 0,
@@ -541,30 +525,15 @@
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetXY"
-          },
-          "parameters": [
-            "dialog_box",
-            "=",
-            "SceneWindowWidth()",
-            "=",
-            "SceneWindowHeight()"
-          ]
-        },
-        {
-          "type": {
-            "value": "FunctionsAux::set_dialog_off"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
-        }
-      ],
+      "actions": [],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Close Dialog"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -615,27 +584,14 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "SetXY"
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
           },
-          "parameters": [
-            "dialog_box",
-            "=",
-            "SceneWindowWidth()",
-            "=",
-            "SceneWindowHeight()"
-          ]
-        },
-        {
-          "type": {
-            "value": "FunctionsAux::set_dialog_off"
-          },
-          "parameters": [
-            "",
-            ""
-          ]
+          "target": "Close Dialog"
         }
       ]
     },
