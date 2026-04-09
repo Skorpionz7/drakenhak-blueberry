@@ -496,6 +496,36 @@
             "SceneWindowHeight()/2"
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "dialog_type",
+                "=",
+                "\"quit\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "dialog_box",
+                "Text",
+                "=",
+                "\"Quit Game? You will lose all unsaved progress.\""
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -657,17 +687,6 @@
                 "dialog_type",
                 "=",
                 "\"quit\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "dialog_box",
-                "Text",
-                "=",
-                "\"Quit Game? You will lose all unsaved progress.\""
               ]
             }
           ]
