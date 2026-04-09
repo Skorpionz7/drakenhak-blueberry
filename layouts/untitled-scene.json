@@ -60,14 +60,14 @@
       "value": false
     },
     {
-      "name": "dialog_type",
-      "type": "string",
-      "value": ""
-    },
-    {
       "name": "close_x",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "dialog_type",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -468,11 +468,10 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "value": "Aux::get_dialog_state"
           },
           "parameters": [
-            "dialog_box_on",
-            "True",
+            "",
             ""
           ]
         },
@@ -503,12 +502,13 @@
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
+                "value": "Aux::get_dialog_type"
               },
               "parameters": [
-                "dialog_type",
+                "",
                 "=",
-                "\"quit\""
+                "\"quit\"",
+                ""
               ]
             }
           ],
@@ -541,19 +541,42 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_box",
+            "=",
+            "SceneWindowWidth()",
+            "=",
+            "SceneWindowHeight()"
+          ]
+        },
+        {
+          "type": {
+            "value": "Aux::set_dialog_off"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "StringVariable"
+                "value": "Aux::get_dialog_type"
               },
               "parameters": [
-                "dialog_type",
+                "",
                 "=",
-                "\"quit\""
+                "\"quit\"",
+                ""
               ]
             }
           ],
@@ -572,28 +595,6 @@
                 "value": "Quit"
               },
               "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "dialog_box",
-                "=",
-                "SceneWindowWidth()",
-                "=",
-                "SceneWindowHeight()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "dialog_box_on",
-                "False",
                 ""
               ]
             }
@@ -629,11 +630,10 @@
         },
         {
           "type": {
-            "value": "SetBooleanVariable"
+            "value": "Aux::set_dialog_off"
           },
           "parameters": [
-            "dialog_box_on",
-            "False",
+            "",
             ""
           ]
         }
@@ -644,11 +644,11 @@
       "conditions": [
         {
           "type": {
-            "value": "BooleanVariable"
+            "inverted": true,
+            "value": "Aux::get_dialog_state"
           },
           "parameters": [
-            "dialog_box_on",
-            "False",
+            "",
             ""
           ]
         }
@@ -671,22 +671,12 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "Aux::set_dialog_on"
               },
               "parameters": [
-                "dialog_box_on",
-                "True",
+                "",
+                "\"quit\"",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetStringVariable"
-              },
-              "parameters": [
-                "dialog_type",
-                "=",
-                "\"quit\""
               ]
             }
           ]
