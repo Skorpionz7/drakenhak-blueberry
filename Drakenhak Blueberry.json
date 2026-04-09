@@ -225,9 +225,29 @@
   },
   "objects": [
     {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "save_button_obj",
+      "persistentUuid": "fd0e34a4-82fa-4a4c-bacf-a46edbfb7673",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Button",
+        "PressedLabelOffsetY": 2
+      }
+    },
+    {
       "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
       "name": "dialog_box",
-      "persistentUuid": "d11c980f-a2aa-4bf2-b9dd-783d00ea9ef2",
+      "persistentUuid": "a7a10179-0081-4a12-97c9-71d21cde8b4c",
       "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
       "variant": "Semi-transparent black and white",
       "variables": [],
@@ -240,11 +260,23 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "objectName": "save_button_obj"
+      },
+      {
         "objectName": "dialog_box"
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "save_games",
+      "objects": [
+        {
+          "name": "save_button_obj"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "save_game",
@@ -266,6 +298,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/help-window"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/save-game"
     }
   ],
   "externalEvents": [
@@ -276,6 +312,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/dialog-header"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/create-save-button"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -285,16 +325,25 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/functionsaux"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tweenintoview"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/gamepads"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/twochoicesdialogboxes"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/functionsaux"
     }
   ],
-  "externalLayouts": []
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/dialog_box_external"
+    }
+  ]
 }

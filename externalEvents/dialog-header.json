@@ -46,6 +46,35 @@
               "parameters": [
                 "",
                 "=",
+                "\"save\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "dialog_box",
+                "Text",
+                "=",
+                "\"Save to slot+\"+ToString(save_games.id)+\"+ You will lose all unsaved progress.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FunctionsAux::get_dialog_type"
+              },
+              "parameters": [
+                "",
+                "=",
                 "\"quit\"",
                 ""
               ]

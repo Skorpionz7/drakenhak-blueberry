@@ -1,0 +1,66 @@
+{
+  "associatedLayout": "Save Game",
+  "name": "Create Save Button",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "save_button_obj",
+            "Resizable",
+            "=",
+            "save_width"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "save_button_obj",
+            "Resizable",
+            "=",
+            "save_height"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+          },
+          "parameters": [
+            "save_button_obj",
+            "=",
+            "\"Save Slot \"+temp_i",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "save_button_obj",
+            "id",
+            "=",
+            "temp_i"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetZOrder"
+          },
+          "parameters": [
+            "save_button_obj",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

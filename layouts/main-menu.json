@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5836067708333331,
+    "zoomFactor": 0.6032861837828954,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -176,22 +176,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "dialog_box",
-      "persistentUuid": "6dcda2c9-9305-4ebb-84f5-5fb55ce5a80a",
-      "width": 0,
-      "x": 1312,
-      "y": 864,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 768,
@@ -203,6 +187,22 @@
       "x": 0,
       "y": 0,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "dialog_box",
+      "persistentUuid": "8d966ee4-8220-4726-b8dc-dc8b7c52ade8",
+      "width": 0,
+      "x": 1312,
+      "y": 800,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -464,7 +464,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "quit_game_button",
+                "save_game_button",
                 ""
               ]
             }
@@ -472,12 +472,12 @@
           "actions": [
             {
               "type": {
-                "value": "FunctionsAux::set_dialog_on"
+                "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"quit\"",
-                ""
+                "\"Save Game\"",
+                "yes"
               ]
             }
           ]
@@ -504,6 +504,32 @@
                 "",
                 "\"Help Window\"",
                 "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "quit_game_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FunctionsAux::set_dialog_on"
+              },
+              "parameters": [
+                "",
+                "\"quit\"",
+                ""
               ]
             }
           ]
