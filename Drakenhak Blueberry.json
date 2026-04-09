@@ -249,7 +249,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/aux"
+      "referenceTo": "/eventsFunctionsExtensions/functionsaux"
     }
   ],
   "externalLayouts": []

@@ -1,0 +1,246 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "FunctionsAux",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [
+    {
+      "name": "dialog_box_on",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "dialog_type",
+      "type": "string",
+      "value": ""
+    }
+  ],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "description": "Set the Dialog on",
+      "fullName": "",
+      "functionType": "Action",
+      "name": "set_dialog_on",
+      "sentence": "Set the Dialog on, with a type _PARAM1_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "True",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "dialog_type",
+                "=",
+                "type"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Dialog Box type",
+          "name": "type",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Set Dialog off",
+      "fullName": "",
+      "functionType": "Action",
+      "name": "set_dialog_off",
+      "sentence": "Set the Dialog off",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "False",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "The Dialog is on",
+      "fullName": "",
+      "functionType": "Condition",
+      "name": "get_dialog_state",
+      "sentence": "The Dialog is on",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "True",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "dialog_box_on",
+                "True",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnBoolean"
+              },
+              "parameters": [
+                "False"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Get the type of the Dialog",
+      "fullName": "",
+      "functionType": "ExpressionAndCondition",
+      "name": "get_dialog_type",
+      "sentence": "Get the type of the Dialog",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetReturnString"
+              },
+              "parameters": [
+                "dialog_type"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "set_dialog_on"
+      },
+      {
+        "functionName": "set_dialog_off"
+      },
+      {
+        "functionName": "get_dialog_state"
+      },
+      {
+        "functionName": "get_dialog_type"
+      }
+    ]
+  },
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "type_property_behavior",
+      "objectType": "",
+      "previewIconUrl": "",
+      "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "propertyDescriptors": [],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "sharedPropertyDescriptors": [
+        {
+          "value": "",
+          "type": "String",
+          "label": "",
+          "name": "type_property"
+        }
+      ],
+      "sharedPropertiesFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "propertyName": "type_property"
+          }
+        ]
+      }
+    }
+  ],
+  "eventsBasedObjects": []
+}

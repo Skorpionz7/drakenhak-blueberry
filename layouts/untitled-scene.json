@@ -468,7 +468,7 @@
       "conditions": [
         {
           "type": {
-            "value": "Aux::get_dialog_state"
+            "value": "FunctionsAux::get_dialog_state"
           },
           "parameters": [
             "",
@@ -502,7 +502,7 @@
           "conditions": [
             {
               "type": {
-                "value": "Aux::get_dialog_type"
+                "value": "FunctionsAux::get_dialog_type"
               },
               "parameters": [
                 "",
@@ -556,7 +556,7 @@
         },
         {
           "type": {
-            "value": "Aux::set_dialog_off"
+            "value": "FunctionsAux::set_dialog_off"
           },
           "parameters": [
             "",
@@ -570,7 +570,7 @@
           "conditions": [
             {
               "type": {
-                "value": "Aux::get_dialog_type"
+                "value": "FunctionsAux::get_dialog_type"
               },
               "parameters": [
                 "",
@@ -630,7 +630,7 @@
         },
         {
           "type": {
-            "value": "Aux::set_dialog_off"
+            "value": "FunctionsAux::set_dialog_off"
           },
           "parameters": [
             "",
@@ -645,7 +645,7 @@
         {
           "type": {
             "inverted": true,
-            "value": "Aux::get_dialog_state"
+            "value": "FunctionsAux::get_dialog_state"
           },
           "parameters": [
             "",
@@ -671,7 +671,7 @@
           "actions": [
             {
               "type": {
-                "value": "Aux::set_dialog_on"
+                "value": "FunctionsAux::set_dialog_on"
               },
               "parameters": [
                 "",
