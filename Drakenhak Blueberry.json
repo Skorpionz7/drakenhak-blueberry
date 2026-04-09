@@ -215,9 +215,26 @@
       }
     ]
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
+      "name": "dialog_box",
+      "persistentUuid": "d11c980f-a2aa-4bf2-b9dd-783d00ea9ef2",
+      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
+      "variant": "Semi-transparent black and white",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "dialog_box"
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [
@@ -237,6 +254,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/main-menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/help-window"
     }
   ],
   "externalEvents": [

@@ -194,7 +194,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 832,
+      "height": 768,
       "keepRatio": true,
       "layer": "",
       "name": "bg_sprite",
@@ -308,17 +308,6 @@
       }
     },
     {
-      "assetStoreId": "9d5de415b6e469c681701ea42d3b1c486fee31d6ef591a2d3e226f639ab486ff",
-      "name": "dialog_box",
-      "persistentUuid": "d11c980f-a2aa-4bf2-b9dd-783d00ea9ef2",
-      "type": "TwoChoicesDialogBoxes::TwoChoicesDialogBox",
-      "variant": "Semi-transparent black and white",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {}
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "bg_sprite",
@@ -405,14 +394,45 @@
         "objectName": "quit_game_button"
       },
       {
-        "objectName": "dialog_box"
-      },
-      {
         "objectName": "bg_sprite"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenterX"
+          },
+          "parameters": [
+            "main_menu_buttons",
+            "=",
+            "SceneWindowWidth()/2"
+          ]
+        },
+        {
+          "type": {
+            "value": "AdvancedWindow::SetClosable"
+          },
+          "parameters": [
+            "no",
+            ""
+          ]
+        }
+      ]
+    },
     {
       "type": "BuiltinCommonInstructions::Link",
       "include": {
@@ -458,6 +478,32 @@
                 "",
                 "\"quit\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "help_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Help Window\"",
+                "yes"
               ]
             }
           ]
