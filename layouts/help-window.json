@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.5290357402156837,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -31,7 +31,13 @@
       "objects": []
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "text_area_text",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -63,6 +69,40 @@
       "x": 0,
       "y": 0,
       "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "monster",
+      "persistentUuid": "e2fcb971-8bf1-4017-9740-f4449a4eb245",
+      "width": 192,
+      "x": 288,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 702,
+      "keepRatio": true,
+      "layer": "",
+      "name": "help_licenses_area",
+      "persistentUuid": "7577f59a-5da0-4827-85cd-d1688272d67f",
+      "width": 512,
+      "x": 736,
+      "y": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -143,6 +183,101 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "monster",
+      "persistentUuid": "879bbf7e-e72f-46ce-91b5-b84c5df35e30",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/grow/m_13_kyttyra.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 0
+                      },
+                      {
+                        "x": 55,
+                        "y": 55
+                      },
+                      {
+                        "x": 0,
+                        "y": 55
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "help_licenses_area",
+      "persistentUuid": "2ccec837-121e-46fe-badc-d1482bf8ada5",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 13,
+        "inputType": "text area",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": true,
+        "disabled": false,
+        "spellCheck": false,
+        "paddingX": 2,
+        "paddingY": 1,
+        "textAlign": "left",
+        "maxLength": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -153,12 +288,17 @@
       },
       {
         "objectName": "bg_sprite"
+      },
+      {
+        "objectName": "monster"
+      },
+      {
+        "objectName": "help_licenses_area"
       }
     ]
   },
   "events": [
     {
-      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -170,47 +310,118 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "SetCenterX"
-          },
-          "parameters": [
-            "help_window_buttons",
-            "=",
-            "SceneWindowWidth()/2"
-          ]
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
-          "type": {
-            "value": "AdvancedWindow::SetClosable"
-          },
-          "parameters": [
-            "no",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.getVariables().get(\"text_area_text\").setString(",
+            "`Lots of tiles and images by David E. Gervais' tile library",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/roguelike-tiles-large-collection",
+            "http://pousse.rapiere.free.fr/tome/",
+            "",
+            "Lots of free 2d tiles and sprites by Hyptosis",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis",
+            "https://lorestrome.com/",
+            "",
+            "Raspberries bg image used in menus by Ivar Leidus",
+            "License: Creative Commons Attribution-Share Alike 4.0 International",
+            "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+            "https://commons.wikimedia.org/wiki/User:Iifar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Lots of tiles and images by David E. Gervais' tile library",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/roguelike-tiles-large-collection",
+            "http://pousse.rapiere.free.fr/tome/",
+            "",
+            "Lots of free 2d tiles and sprites by Hyptosis",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis",
+            "https://lorestrome.com/",
+            "",
+            "Raspberries image in Main Menu by Ivar Leidus",
+            "License: Creative Commons Attribution-Share Alike 4.0 International",
+            "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+            "https://commons.wikimedia.org/wiki/User:Iifar",
+            "Lots of tiles and images by David E. Gervais' tile library",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/roguelike-tiles-large-collection",
+            "http://pousse.rapiere.free.fr/tome/",
+            "",
+            "Lots of free 2d tiles and sprites by Hyptosis",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis",
+            "https://lorestrome.com/",
+            "",
+            "Raspberries image in Main Menu by Ivar Leidus",
+            "License: Creative Commons Attribution-Share Alike 4.0 International",
+            "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+            "https://commons.wikimedia.org/wiki/User:Iifar",
+            "Lots of tiles and images by David E. Gervais' tile library",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/roguelike-tiles-large-collection",
+            "http://pousse.rapiere.free.fr/tome/",
+            "",
+            "Lots of free 2d tiles and sprites by Hyptosis",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis",
+            "https://lorestrome.com/",
+            "",
+            "Raspberries image in Main Menu by Ivar Leidus Raspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar LeidusRaspberries image in Main Menu by Ivar Leidus",
+            "License: Creative Commons Attribution-Share Alike 4.0 International",
+            "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+            "https://commons.wikimedia.org/wiki/User:Iifar",
+            "Lots of tiles and images by David E. Gervais' tile library",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/roguelike-tiles-large-collection",
+            "http://pousse.rapiere.free.fr/tome/",
+            "",
+            "Lots of free 2d tiles and sprites by Hyptosis",
+            "License: CC-BY 3.0",
+            "https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis",
+            "https://lorestrome.com/",
+            "",
+            "Raspberries image in Main Menu by Ivar Leidus",
+            "License: Creative Commons Attribution-Share Alike 4.0 International",
+            "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
+            "https://commons.wikimedia.org/wiki/User:Iifar",
+            "",
+            "",
+            "END OF FILE`",
+            ");"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
         {
-          "type": {
-            "value": "SceneJustBegins"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "CenterWindow"
-          },
-          "parameters": [
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "help_licenses_area",
+                "Text",
+                "=",
+                "text_area_text"
+              ]
+            }
           ]
         }
       ]
@@ -221,6 +432,115 @@
         "includeConfig": 0
       },
       "target": "Dialog Header"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"shrink\"",
+            "0",
+            "\"easeInOutQuad\"",
+            "0",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"shrink\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::RemoveTween"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"shrink\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"grow\"",
+            "400",
+            "\"easeInOutQuad\"",
+            "4",
+            "no"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Tween::HasFinished"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"grow\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::RemoveTween"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"grow\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"shrink\"",
+            "100",
+            "\"easeInOutQuad\"",
+            "4",
+            "no"
+          ]
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -265,6 +585,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -362,6 +687,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

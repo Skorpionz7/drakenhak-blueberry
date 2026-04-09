@@ -7,7 +7,7 @@
     "revision": 0
   },
   "properties": {
-    "adaptGameResolutionAtRuntime": true,
+    "adaptGameResolutionAtRuntime": false,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
@@ -210,6 +210,14 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/graphics/raspberries.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_13_kyttyra.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_13_kyttyra.png",
         "smoothed": true,
         "userAdded": false
       }
