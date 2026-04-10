@@ -404,6 +404,43 @@
       "conditions": [
         {
           "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "start",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "start",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.id",
+            "=",
+            "RandomInRange(100,999)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "SceneJustBegins"
           },
           "parameters": [
@@ -432,13 +469,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Dialog Header"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -535,6 +565,13 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialog Footer"
     }
   ],
   "layers": [

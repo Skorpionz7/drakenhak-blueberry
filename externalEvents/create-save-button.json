@@ -35,7 +35,7 @@
           "parameters": [
             "save_button_obj",
             "=",
-            "\"Save Slot \"+temp_i",
+            "\"Save Slot Error \"+temp_i",
             ""
           ]
         },
@@ -58,6 +58,26 @@
             "save_button_obj",
             "=",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+          },
+          "parameters": [
+            "save_button_obj",
+            "=",
+            "save_names[\"name\"+ToString(temp_i)]",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeLayer"
+          },
+          "parameters": [
+            "save_button_obj",
+            "\"save_button_layer\""
           ]
         }
       ]

@@ -220,6 +220,61 @@
         "name": "assets/graphics/grow/m_13_kyttyra.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/graphics/comatricha.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/comatricha.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Green Button With Stone Frame_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Stone Frame_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/a835b9f7fa283fad672fb8607fae99c67b44cb853e81b878926ed7804816be23_Green Button With Stone Frame_Hovered.png",
+          "name": "Green Button With Stone Frame_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Green Button With Stone Frame_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Stone Frame_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d13ac936a5ce1b628ec20f6031582f6fce805d090e77e5e05d27344bac08ba98_Green Button With Stone Frame_Idle.png",
+          "name": "Green Button With Stone Frame_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Green Button With Stone Frame_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Stone Frame_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/8921367f00ac169c0565935cbcaed36d5f383f7d3c4e819fbd7384a89dae1d43_Green Button With Stone Frame_Pressed.png",
+          "name": "Green Button With Stone Frame_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Roboto-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "Roboto-Regular.ttf"
+        }
       }
     ]
   },
@@ -254,6 +309,54 @@
       "effects": [],
       "behaviors": [],
       "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "name": "dialog_prompt",
+      "persistentUuid": "b1cc8a8e-8a1e-4098-af9a-11871eb700b6",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 35,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false,
+        "spellCheck": false,
+        "paddingX": 2,
+        "paddingY": 1,
+        "textAlign": "left",
+        "maxLength": 0
+      }
+    },
+    {
+      "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
+      "name": "dialog_ok",
+      "persistentUuid": "5346f36f-e04b-43ff-96e3-964c942e930d",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Green Button With Stone Frame",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2,
+        "LabelText": "Choose"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -264,6 +367,12 @@
       },
       {
         "objectName": "dialog_box"
+      },
+      {
+        "objectName": "dialog_prompt"
+      },
+      {
+        "objectName": "dialog_ok"
       }
     ]
   },
@@ -288,6 +397,71 @@
           "value": 1337
         }
       ]
+    },
+    {
+      "name": "temp1",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "save_game_amount",
+      "type": "number",
+      "value": 27
+    },
+    {
+      "name": "save_name",
+      "type": "string",
+      "value": "\"drakenhakblueberrysaves\""
+    },
+    {
+      "name": "temp_i",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "temp_i2",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "save_names",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "temp_string1",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "savenames_name",
+      "type": "string",
+      "value": "\"savenames\""
+    },
+    {
+      "name": "temp_load1",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "start",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "name": "temp_string2",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "temp_string3",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "fly_to_search",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -311,11 +485,39 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/dialog-header"
+      "referenceTo": "/externalEvents/dialog-footer"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/create-save-button"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/save-game-event"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/populate-save-names"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/load-game-event"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/load-save-names"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/save-save-names"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/show-prompt-dialog"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/show-dialog"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -340,10 +542,5 @@
       "referenceTo": "/eventsFunctionsExtensions/twochoicesdialogboxes"
     }
   ],
-  "externalLayouts": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/dialog_box_external"
-    }
-  ]
+  "externalLayouts": []
 }

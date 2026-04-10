@@ -28,11 +28,6 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "temp_i",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "save_width",
       "type": "number",
       "value": 400
@@ -41,6 +36,11 @@
       "name": "save_height",
       "type": "number",
       "value": 50
+    },
+    {
+      "name": "save_local",
+      "type": "structure",
+      "children": []
     }
   ],
   "instances": [
@@ -94,6 +94,56 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 896,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bg_fungi",
+      "persistentUuid": "c292fc32-d3c1-4043-931f-33d561bd2074",
+      "width": 1280,
+      "x": 0,
+      "y": -128,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 94,
+      "keepRatio": true,
+      "layer": "",
+      "name": "dialog_prompt",
+      "persistentUuid": "b1dd030f-46ba-44c4-8ae0-08850f064ebe",
+      "width": 588,
+      "x": 1364,
+      "y": 1122,
+      "zOrder": 1001,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "dialog_ok",
+      "persistentUuid": "895c2dbc-423a-44d4-a807-2e5ae73759a4",
+      "width": 0,
+      "x": 1952,
+      "y": 1114,
+      "zOrder": 1002,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -110,6 +160,67 @@
         "LabelText": "Back to Main",
         "PressedLabelOffsetY": 2
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bg_fungi",
+      "persistentUuid": "c1f0e7a4-29ee-41b5-9605-98bebe83780f",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/comatricha.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 2048,
+                        "y": 0
+                      },
+                      {
+                        "x": 2048,
+                        "y": 1638
+                      },
+                      {
+                        "x": 0,
+                        "y": 1638
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -117,17 +228,13 @@
     "children": [
       {
         "objectName": "back_button"
+      },
+      {
+        "objectName": "bg_fungi"
       }
     ]
   },
   "events": [
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Dialog Header"
-    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -174,6 +281,13 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Populate Save Names"
+        },
+        {
           "infiniteLoopWarning": true,
           "type": "BuiltinCommonInstructions::While",
           "whileConditions": [
@@ -184,7 +298,7 @@
               "parameters": [
                 "temp_i",
                 "<=",
-                "27"
+                "save_game_amount"
               ]
             }
           ],
@@ -201,7 +315,7 @@
                   "parameters": [
                     "temp_i",
                     "<=",
-                    "9"
+                    "save_game_amount/3"
                   ]
                 }
               ],
@@ -239,7 +353,7 @@
                   "parameters": [
                     "temp_i",
                     "<=",
-                    "18"
+                    "save_game_amount*2/3"
                   ]
                 }
               ],
@@ -252,7 +366,7 @@
                     "",
                     "save_button_obj",
                     "SceneWindowWidth() / 2 - save_width/2",
-                    "30+save_height*(temp_i-9)",
+                    "30+save_height*(temp_i-save_game_amount/3)",
                     ""
                   ]
                 }
@@ -277,7 +391,7 @@
                   "parameters": [
                     "temp_i",
                     "<=",
-                    "27"
+                    "save_game_amount"
                   ]
                 }
               ],
@@ -290,7 +404,7 @@
                     "",
                     "save_button_obj",
                     "SceneWindowWidth()/2+ save_width/2+57",
-                    "30+save_height*(temp_i-18)",
+                    "30+save_height*(temp_i-save_game_amount*2/3)",
                     ""
                   ]
                 }
@@ -346,6 +460,28 @@
           "conditions": [
             {
               "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"save_button_layer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
@@ -390,10 +526,36 @@
                 "\"save\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temp1",
+                "=",
+                "save_games.id"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"save_button_layer\""
+              ]
             }
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialog Footer"
     }
   ],
   "layers": [
@@ -461,9 +623,67 @@
           }
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "save_button_layer",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
@@ -479,6 +699,10 @@
     {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
     },
     {
       "name": "Text",

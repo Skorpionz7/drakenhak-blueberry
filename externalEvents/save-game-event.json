@@ -1,0 +1,22 @@
+{
+  "associatedLayout": "Save Game",
+  "name": "Save Game Event",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EcrireFichierTxt"
+          },
+          "parameters": [
+            "save_name",
+            "temp_string1",
+            "ToJSON(save_game)"
+          ]
+        }
+      ]
+    }
+  ]
+}

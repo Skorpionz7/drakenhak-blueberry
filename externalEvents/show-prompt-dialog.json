@@ -1,0 +1,44 @@
+{
+  "associatedLayout": "Save Game",
+  "name": "Show Prompt Dialog",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_prompt",
+            "=",
+            "SceneWindowWidth()/2-(dialog_prompt.Width()+dialog_ok.Width())/2",
+            "=",
+            "SceneWindowHeight()/2-dialog_prompt.Height()/2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_ok",
+            "=",
+            "SceneWindowWidth()/2-(dialog_prompt.Width()+dialog_ok.Width())/2+dialog_prompt.Width()",
+            "=",
+            "SceneWindowHeight()/2-dialog_ok.Height()/2"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextInput::TextInputObject::Focus"
+          },
+          "parameters": [
+            "dialog_prompt"
+          ]
+        }
+      ]
+    }
+  ]
+}

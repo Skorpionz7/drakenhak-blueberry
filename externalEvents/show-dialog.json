@@ -1,0 +1,24 @@
+{
+  "associatedLayout": "Save Game",
+  "name": "Show Dialog",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "dialog_box",
+            "=",
+            "SceneWindowWidth()/2",
+            "=",
+            "SceneWindowHeight()/2"
+          ]
+        }
+      ]
+    }
+  ]
+}

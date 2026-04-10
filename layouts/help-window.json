@@ -353,6 +353,10 @@
             "https://en.wikipedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg",
             "https://commons.wikimedia.org/wiki/User:Iifar",
             "",
+            "Fungi bg image used in menus by Alexis Tinker-Tsavalas",
+            "License: Creative Commons Attribution 4.0 International license",
+            "https://en.wikipedia.org/wiki/File:Comatricha_nigra_176600092.jpg",
+            "https://www.inaturalist.org/users/999066",
             "",
             "",
             "",
@@ -442,13 +446,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Dialog Header"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -604,9 +601,11 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialog Footer"
     }
   ],
   "layers": [

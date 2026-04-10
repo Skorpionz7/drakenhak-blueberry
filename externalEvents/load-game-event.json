@@ -1,0 +1,32 @@
+{
+  "associatedLayout": "Save Game",
+  "name": "Load Game Event",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ReadStringFromStorage"
+          },
+          "parameters": [
+            "save_name",
+            "temp_string1",
+            "",
+            "temp_load1"
+          ]
+        },
+        {
+          "type": {
+            "value": "JSONToVariableStructure2"
+          },
+          "parameters": [
+            "temp_load1",
+            "save_game"
+          ]
+        }
+      ]
+    }
+  ]
+}
