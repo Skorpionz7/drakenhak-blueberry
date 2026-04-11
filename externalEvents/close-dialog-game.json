@@ -1,0 +1,24 @@
+{
+  "associatedLayout": "Game Position",
+  "name": "Close Dialog Game",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_box",
+            "=",
+            "player_character.X()+SceneWindowWidth()*10",
+            "=",
+            "player_character.Y()+SceneWindowHeight()*10"
+          ]
+        }
+      ]
+    }
+  ]
+}

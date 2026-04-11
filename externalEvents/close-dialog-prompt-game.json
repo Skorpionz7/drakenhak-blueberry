@@ -1,0 +1,36 @@
+{
+  "associatedLayout": "Game Position",
+  "name": "Close Dialog Prompt Game",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_prompt",
+            "=",
+            "player_character.X()+SceneWindowWidth()*10",
+            "=",
+            "player_character.Y()+SceneWindowHeight()*10"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "dialog_ok",
+            "=",
+            "player_character.X()+SceneWindowWidth()*10",
+            "=",
+            "player_character.Y()+SceneWindowHeight()*10"
+          ]
+        }
+      ]
+    }
+  ]
+}

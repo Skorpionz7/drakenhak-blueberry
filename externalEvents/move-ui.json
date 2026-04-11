@@ -1,0 +1,48 @@
+{
+  "associatedLayout": "Game Position",
+  "name": "Move UI",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CenterCameraOnObject"
+          },
+          "parameters": [
+            "",
+            "player_character",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "to_menu_button",
+            "=",
+            "SceneWindowWidth() - to_menu_button.Width() + (player_character.X() - SceneWindowWidth() / 2) + 32",
+            "=",
+            "SceneWindowHeight() - to_menu_button.Height() + (player_character.Y() - SceneWindowHeight() / 2) + 33"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "to_layout_button",
+            "=",
+            "SceneWindowWidth() - to_menu_button.Width() - to_layout_button.Width() + (player_character.X() - SceneWindowWidth() / 2) + 32",
+            "=",
+            "SceneWindowHeight() - to_layout_button.Height() + (player_character.Y() - SceneWindowHeight() / 2) + 33"
+          ]
+        }
+      ]
+    }
+  ]
+}
