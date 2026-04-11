@@ -1,0 +1,86 @@
+{
+  "associatedLayout": "Load Game",
+  "name": "Create Load Button",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "load_button_obj",
+            "Resizable",
+            "=",
+            "load_width"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "load_button_obj",
+            "Resizable",
+            "=",
+            "load_height"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+          },
+          "parameters": [
+            "load_button_obj",
+            "=",
+            "\"Save Slot Error \"+temp_i",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "load_button_obj",
+            "id",
+            "=",
+            "temp_i"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetZOrder"
+          },
+          "parameters": [
+            "load_button_obj",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::SetLabelTextOp"
+          },
+          "parameters": [
+            "load_button_obj",
+            "=",
+            "save_names[\"name\"+ToString(temp_i)]",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeLayer"
+          },
+          "parameters": [
+            "load_button_obj",
+            "\"load_button_layer\""
+          ]
+        }
+      ]
+    }
+  ]
+}

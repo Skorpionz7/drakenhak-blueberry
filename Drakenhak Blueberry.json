@@ -275,6 +275,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
           "name": "Roboto-Regular.ttf"
         }
+      },
+      {
+        "file": "assets/graphics/tilebg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/tilebg.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -357,6 +365,27 @@
         "HoveredFadeOutDuration": 0.2,
         "LabelText": "Choose"
       }
+    },
+    {
+      "assetStoreId": "75e114003f1edb6244fc1ea2ce490a3b3486b47e9513a902366f8487cbd01dd4",
+      "name": "load_button_obj",
+      "persistentUuid": "2e649cfe-9732-41e1-b2f4-63245eded135",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Tiny Yellow Button2",
+      "variables": [
+        {
+          "name": "id",
+          "persistentUuid": "df02aa63-415d-445c-a9ed-ef76b6d7632c",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LabelText": "Button",
+        "PressedLabelOffsetY": 2
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -364,6 +393,9 @@
     "children": [
       {
         "objectName": "save_button_obj"
+      },
+      {
+        "objectName": "load_button_obj"
       },
       {
         "objectName": "dialog_box"
@@ -377,6 +409,14 @@
     ]
   },
   "objectsGroups": [
+    {
+      "name": "load_games",
+      "objects": [
+        {
+          "name": "load_button_obj"
+        }
+      ]
+    },
     {
       "name": "save_games",
       "objects": [
@@ -476,6 +516,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/save-game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/load-game"
     }
   ],
   "externalEvents": [
@@ -490,6 +534,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/create-save-button"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/create-load-button"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
