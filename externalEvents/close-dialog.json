@@ -13,9 +13,9 @@
           "parameters": [
             "dialog_box",
             "=",
-            "SceneWindowWidth()",
+            "SceneWindowWidth()*10",
             "=",
-            "SceneWindowHeight()"
+            "SceneWindowHeight()*10"
           ]
         },
         {

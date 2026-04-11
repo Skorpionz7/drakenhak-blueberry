@@ -269,9 +269,9 @@
           "parameters": [
             "dialog_prompt",
             "=",
-            "SceneWindowWidth()",
+            "SceneWindowWidth()*10",
             "=",
-            "SceneWindowHeight()"
+            "SceneWindowHeight()*10"
           ]
         },
         {
@@ -281,9 +281,9 @@
           "parameters": [
             "dialog_ok",
             "=",
-            "SceneWindowWidth()",
+            "SceneWindowWidth()*10",
             "=",
-            "SceneWindowHeight()"
+            "SceneWindowHeight()*10"
           ]
         },
         {
