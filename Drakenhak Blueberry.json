@@ -283,6 +283,210 @@
         "name": "assets/graphics/tilebg.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/graphics/gold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/gold.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Orange Button With Stone Frame_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orange Button With Stone Frame_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d9f0792f91e3d7948395be2a60773d80eebd8bcc8f506668db7fdafc3a1a8b12_Orange Button With Stone Frame_Hovered.png",
+          "name": "Orange Button With Stone Frame_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Orange Button With Stone Frame_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orange Button With Stone Frame_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/623f773b7fcb6086b852622191c3fe6868f18dea34fb4f4150f4955cd17d9d49_Orange Button With Stone Frame_Idle.png",
+          "name": "Orange Button With Stone Frame_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Orange Button With Stone Frame_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orange Button With Stone Frame_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/988126f14c4319aab11ff5fbcfb970806eaa418a4543a3ccfc1ef9ec183f1d60_Orange Button With Stone Frame_Pressed.png",
+          "name": "Orange Button With Stone Frame_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/graphics/grow/m_1_slimebeginning.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_1_slimebeginning.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_2_slimebeginning2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_2_slimebeginning2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_3_slimebeginning3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_3_slimebeginning3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_4_frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_4_frog.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_5_worm.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_5_worm.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_6_snake.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_6_snake.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_7_2headedsnake.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_7_2headedsnake.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_8_snakelizard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_8_snakelizard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_9_minilizard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_9_minilizard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_10_lizard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_10_lizard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_12_form.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_12_form.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_14_spike.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_14_spike.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_15_2headedspike.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_15_2headedspike.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_16_babydragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_16_babydragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_17_smalldragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_17_smalldragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_18_mediumdragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_18_mediumdragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_19_dragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_19_dragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_20_bigdragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_20_bigdragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_21_olddragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_21_olddragon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/grow/m_22_readydragon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/grow/m_22_readydragon.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -435,6 +639,11 @@
           "name": "id",
           "type": "number",
           "value": 1337
+        },
+        {
+          "name": "money",
+          "type": "number",
+          "value": 1337
         }
       ]
     },
@@ -502,6 +711,16 @@
       "name": "fly_to_search",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "start_new_game",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "monster_animation_amount",
+      "type": "number",
+      "value": 22
     }
   ],
   "layouts": [
@@ -520,6 +739,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/load-game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/layout"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-position"
     }
   ],
   "externalEvents": [

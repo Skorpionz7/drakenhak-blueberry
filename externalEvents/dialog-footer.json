@@ -27,6 +27,50 @@
               "parameters": [
                 "",
                 "=",
+                "\"new_game\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "dialog_box",
+                "Text",
+                "=",
+                "\"Start a new game? You will lose all unsaved progress.\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Show Dialog"
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FunctionsAux::get_dialog_type"
+              },
+              "parameters": [
+                "",
+                "=",
                 "\"save\"",
                 ""
               ]
@@ -312,6 +356,44 @@
             "includeConfig": 0
           },
           "target": "Close Dialog"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "FunctionsAux::get_dialog_type"
+              },
+              "parameters": [
+                "",
+                "=",
+                "\"new_game\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "start_new_game",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Layout\"",
+                "yes"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
