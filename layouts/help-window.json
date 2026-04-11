@@ -327,7 +327,22 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+          },
+          "parameters": [
+            "monster",
+            "Tween",
+            "\"shrink\"",
+            "0",
+            "\"easeInOutQuad\"",
+            "0",
+            "no"
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -443,33 +458,6 @@
                 "text_area_text"
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectWidthTween2"
-          },
-          "parameters": [
-            "monster",
-            "Tween",
-            "\"shrink\"",
-            "0",
-            "\"easeInOutQuad\"",
-            "0",
-            "no"
           ]
         }
       ]
