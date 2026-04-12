@@ -20,6 +20,18 @@
         },
         {
           "type": {
+            "value": "CenterCameraOnObject"
+          },
+          "parameters": [
+            "",
+            "player_character",
+            "",
+            "\"z-order\"",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "SetXY"
           },
           "parameters": [

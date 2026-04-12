@@ -25,7 +25,27 @@
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "trees",
+      "objects": [
+        {
+          "name": "Tree"
+        }
+      ]
+    },
+    {
+      "name": "z_order",
+      "objects": [
+        {
+          "name": "Tree"
+        },
+        {
+          "name": "player_character"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -67,7 +87,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "z-order",
       "name": "player_character",
       "persistentUuid": "2304a749-bf09-4206-839e-b1680812e595",
       "width": 0,
@@ -98,6 +118,22 @@
           "value": "{\"tileWidth\":48,\"tileHeight\":48,\"dimX\":6,\"dimY\":3,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,7,1,1,1],[1,1,8,1,1,1],[7,1,8,1,1,1]]}]}"
         }
       ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree",
+      "persistentUuid": "81325fad-5834-4ec6-ad4b-88130e90e0c8",
+      "width": 0,
+      "x": 646,
+      "y": 207,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
       "initialVariables": []
     }
   ],
@@ -155,6 +191,79 @@
         "tileSize": 48,
         "tilesWithHitBox": "7,9,8"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "persistentUuid": "e1d5a525-c13e-4a39-bee0-564ee35ed8a0",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "6c0a5d9b5c58364232fd9b91b162eee94eb777d0bef34a344acb1116cceb6021",
+      "name": "Tree",
+      "persistentUuid": "0395f4cc-d03f-45e4-aa3f-a0611af1f600",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tree.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 143,
+                        "y": 0
+                      },
+                      {
+                        "x": 143,
+                        "y": 120
+                      },
+                      {
+                        "x": 0,
+                        "y": 120
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -168,6 +277,12 @@
       },
       {
         "objectName": "program_map"
+      },
+      {
+        "objectName": "NewSprite"
+      },
+      {
+        "objectName": "Tree"
       }
     ]
   },
@@ -205,6 +320,16 @@
             "player_character",
             "=",
             "save_game.player_rot"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetZOrder"
+          },
+          "parameters": [
+            "z_order",
+            "=",
+            "z_order.Y()+z_order.Height()"
           ]
         }
       ],
@@ -295,7 +420,18 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetZOrder"
+              },
+              "parameters": [
+                "player_character",
+                "=",
+                "player_character.Y()+player_character.Height()"
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Link",
@@ -414,6 +550,60 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "z-order",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",

@@ -296,6 +296,16 @@
             "=",
             "\"\""
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "dialog_prompt_on",
+            "False",
+            ""
+          ]
         }
       ],
       "events": [
@@ -344,6 +354,16 @@
           },
           "parameters": [
             "dialog_box",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "dialog_prompt_on",
+            "False",
             ""
           ]
         }
@@ -569,6 +589,16 @@
           },
           "parameters": [
             "dialog_box",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "dialog_prompt_on",
+            "False",
             ""
           ]
         }

@@ -37,6 +37,16 @@
           "parameters": [
             "dialog_prompt"
           ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "dialog_prompt_on",
+            "True",
+            ""
+          ]
         }
       ]
     }

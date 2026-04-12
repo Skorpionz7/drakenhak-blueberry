@@ -558,6 +558,18 @@
         "name": "assets/graphics/grow/m_11_lizard2.png2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Tree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tree.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Graveyard/Plant/b0d242a2f075ec6ac3012339b4d5309f540513d0f2bb2a56d554de6441785dde_Tree.png",
+          "name": "Tree.png"
+        }
       }
     ]
   },
@@ -898,6 +910,11 @@
       "name": "monster_animation_amount",
       "type": "number",
       "value": 22
+    },
+    {
+      "name": "dialog_prompt_on",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
