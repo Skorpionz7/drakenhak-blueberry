@@ -51,6 +51,9 @@
         },
         {
           "name": "Tree4"
+        },
+        {
+          "name": "bush"
         }
       ]
     },
@@ -173,6 +176,102 @@
       "x": 626,
       "y": 375,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "3f06f970-7936-4680-bf5b-0670cca063ad",
+      "width": 0,
+      "x": 1590,
+      "y": 369,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "93be0597-e0f0-4532-9cd1-458cf22206d4",
+      "width": 0,
+      "x": 1758,
+      "y": 250,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "68ab7043-b801-4f46-ad74-5f29098ebd60",
+      "width": 0,
+      "x": 1458,
+      "y": 153,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "5fc2e4ce-70e2-481c-994c-fc9cdc4c4dd3",
+      "width": 0,
+      "x": 1795,
+      "y": 82,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "c196361f-eaeb-4656-b324-053deb72bb57",
+      "width": 0,
+      "x": 1992,
+      "y": 426,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "bush",
+      "persistentUuid": "0fd8d938-cad2-48b0-b539-a69e9460cf13",
+      "width": 0,
+      "x": 1323,
+      "y": 413,
+      "zOrder": 16,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -974,6 +1073,68 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "7eaa81bdd06bbaa2be2e0e7e0af54cb72896b93f15a767cc47124b4bd5f41e37",
+      "name": "bush",
+      "persistentUuid": "a5711d4c-eb59-4b40-96d2-eff27ca20ea9",
+      "preScale": 2,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bush (1).png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 73,
+                        "y": 0
+                      },
+                      {
+                        "x": 73,
+                        "y": 44
+                      },
+                      {
+                        "x": 0,
+                        "y": 44
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -996,6 +1157,9 @@
       },
       {
         "objectName": "Tree4"
+      },
+      {
+        "objectName": "bush"
       }
     ]
   },

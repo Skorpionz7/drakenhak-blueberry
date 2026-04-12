@@ -706,6 +706,18 @@
         "name": "assets/graphics/butterfly spritesheet16",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Bush (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bush (1).png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Desert/Objects/Plant/436a2917a1e34b96ec35704a7505cc02d428ed86ec318a5dd59cd1b5198bb82a_Bush (1).png",
+          "name": "Bush (1).png"
+        }
       }
     ]
   },
