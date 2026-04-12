@@ -401,7 +401,13 @@
       "preScale": 2.4,
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [
         {
           "effectType": "Adjustment",
@@ -1330,6 +1336,17 @@
                   "parameters": [
                     "butterfly",
                     "\"z-order\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "id",
+                    "=",
+                    "temp_i"
                   ]
                 }
               ]

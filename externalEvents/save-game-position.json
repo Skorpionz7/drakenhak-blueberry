@@ -49,8 +49,8 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "butterflys",
+      "type": "BuiltinCommonInstructions::Repeat",
+      "repeatExpression": "butterfly_position.amount",
       "conditions": [],
       "actions": [
         {
@@ -62,35 +62,55 @@
             "+",
             "1"
           ]
-        },
+        }
+      ],
+      "events": [
         {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "save_game.butterflys[temp_i][\"used\"]",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "save_game.butterflys[temp_i][\"x\"]",
-            "=",
-            "butterflys.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "save_game.butterflys[temp_i][\"y\"]",
-            "=",
-            "butterflys.Y()"
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "butterflys",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "temp_i",
+                "=",
+                "butterflys.id"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"used\"]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"x\"]",
+                "=",
+                "butterflys.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"y\"]",
+                "=",
+                "butterflys.Y()"
+              ]
+            }
           ]
         }
       ]
