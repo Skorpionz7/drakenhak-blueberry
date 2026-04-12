@@ -32,6 +32,18 @@
         },
         {
           "type": {
+            "value": "CenterCameraOnObject"
+          },
+          "parameters": [
+            "",
+            "player_character",
+            "",
+            "\"menu_layer\"",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "SetXY"
           },
           "parameters": [
