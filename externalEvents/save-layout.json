@@ -1,0 +1,22 @@
+{
+  "associatedLayout": "Layout",
+  "name": "Save Layout",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.money",
+            "=",
+            "ToNumber(money_text.Text::Value())"
+          ]
+        }
+      ]
+    }
+  ]
+}

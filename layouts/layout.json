@@ -1160,6 +1160,105 @@
             "=",
             "360"
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "temp_i",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.butterflys[\"amount\"]",
+            "=",
+            "butterfly_position.amount"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Repeat",
+          "repeatExpression": "save_game.butterflys[\"amount\"]",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temp_i",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"used\"]",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"r\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"g\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"b\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"x\"]",
+                "=",
+                "RandomInRange(butterfly_position.x,butterfly_position.x2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"y\"]",
+                "=",
+                "RandomInRange(butterfly_position.y,butterfly_position.y2)"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1247,6 +1346,15 @@
                 "\"Main Menu\"",
                 "yes"
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Save Layout"
             }
           ]
         },
@@ -1337,6 +1445,15 @@
                     "\"Game Position\"",
                     "yes"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "Save Layout"
                 }
               ]
             }

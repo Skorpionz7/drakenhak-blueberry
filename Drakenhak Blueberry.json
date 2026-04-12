@@ -570,6 +570,142 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Graveyard/Plant/b0d242a2f075ec6ac3012339b4d5309f540513d0f2bb2a56d554de6441785dde_Tree.png",
           "name": "Tree.png"
         }
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/butterfly spritesheet.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/butterfly spritesheet16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/graphics/butterfly spritesheet16",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -810,6 +946,11 @@
       "type": "structure",
       "children": [
         {
+          "name": "butterflys",
+          "type": "structure",
+          "children": []
+        },
+        {
           "name": "id",
           "type": "number",
           "value": 1377
@@ -915,6 +1056,37 @@
       "name": "dialog_prompt_on",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "butterfly_position",
+      "type": "structure",
+      "children": [
+        {
+          "name": "amount",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "value": 1320
+        },
+        {
+          "name": "x2",
+          "type": "number",
+          "value": 2120
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "value": 80
+        },
+        {
+          "name": "y2",
+          "type": "number",
+          "value": 520
+        }
+      ]
     }
   ],
   "layouts": [
@@ -1003,6 +1175,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/move-ui"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/save-layout"
     }
   ],
   "eventsFunctionsExtensions": [
