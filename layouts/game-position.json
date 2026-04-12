@@ -1348,6 +1348,16 @@
                     "=",
                     "temp_i"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "=",
+                    "Random(butterfly.AnimationFrameCount() - 1)"
+                  ]
                 }
               ]
             }
@@ -1357,16 +1367,6 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
-            {
-              "type": {
-                "value": "ChangeSprite"
-              },
-              "parameters": [
-                "butterfly",
-                "=",
-                "Random(butterfly.AnimationFrameCount() - 1)"
-              ]
-            },
             {
               "type": {
                 "value": "SetZOrder"
