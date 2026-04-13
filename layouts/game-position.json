@@ -1,13 +1,13 @@
 {
-  "b": 255,
+  "b": 155,
   "disableInputWhenNotFocused": true,
   "mangledName": "Game_32Position",
   "name": "Game Position",
-  "r": 247,
+  "r": 155,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 249,
+  "v": 155,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.3216911764705894,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -31,9 +31,6 @@
       "objects": [
         {
           "name": "Tree3"
-        },
-        {
-          "name": "Tree4"
         }
       ]
     },
@@ -48,9 +45,6 @@
         },
         {
           "name": "butterfly"
-        },
-        {
-          "name": "Tree4"
         },
         {
           "name": "bush"
@@ -82,7 +76,7 @@
       "depth": 64,
       "height": 64,
       "keepRatio": true,
-      "layer": "menu_layer",
+      "layer": "",
       "name": "to_menu_button",
       "persistentUuid": "f74c6b3e-84c4-47de-9af8-d2d5338b5d09",
       "width": 117,
@@ -99,7 +93,7 @@
       "depth": 64,
       "height": 64,
       "keepRatio": true,
-      "layer": "menu_layer",
+      "layer": "",
       "name": "to_layout_button",
       "persistentUuid": "efa05e80-6831-4649-987e-a5dc2b4fa257",
       "width": 115,
@@ -128,28 +122,6 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 443.33333333333337,
-      "keepRatio": true,
-      "layer": "",
-      "name": "program_map",
-      "persistentUuid": "13234b81-d52a-474c-a9bc-3cca755003c9",
-      "width": 1872.5000000000005,
-      "x": 253,
-      "y": 80.66666666666666,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [
-        {
-          "name": "tilemap",
-          "value": "{\"tileWidth\":48,\"tileHeight\":48,\"dimX\":21,\"dimY\":5,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1],[-1,-1,7,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1],[1,1,8,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1],[7,1,8,1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1,1,1,1,1,1]]}]}"
-        }
-      ],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "keepRatio": true,
@@ -157,25 +129,9 @@
       "name": "Tree3",
       "persistentUuid": "81325fad-5834-4ec6-ad4b-88130e90e0c8",
       "width": 0,
-      "x": 646,
-      "y": 207,
+      "x": 817,
+      "y": 244,
       "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "z-order",
-      "name": "Tree4",
-      "persistentUuid": "3c42a0d7-91da-4055-b62d-4faa7ca893c3",
-      "width": 0,
-      "x": 626,
-      "y": 375,
-      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -275,6 +231,152 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "menu_layer",
+      "name": "to_menu_button",
+      "persistentUuid": "681c0c7d-8454-4f1a-96f7-c97f30201bd4",
+      "width": 118,
+      "x": 2783,
+      "y": 1317,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "menu_layer",
+      "name": "to_layout_button",
+      "persistentUuid": "fa71760a-6cdf-460d-9213-d17ad39da8e3",
+      "width": 142,
+      "x": 2623,
+      "y": 1308,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewExternalTileMap",
+      "persistentUuid": "38b1d8df-a2ad-431b-8d5d-d77f3e21d256",
+      "width": 0,
+      "x": 10,
+      "y": -1215,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewExternalTileMapMask",
+      "persistentUuid": "84e6800c-8771-4731-8d52-26d796f48c66",
+      "width": 0,
+      "x": 10,
+      "y": -1210,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree3",
+      "persistentUuid": "cd89e694-c3c3-49a8-89f9-035fb2e2f21a",
+      "width": 0,
+      "x": 963,
+      "y": 73,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree3",
+      "persistentUuid": "3126dc7b-e5b3-4b5c-899c-efa9bdc0acef",
+      "width": 0,
+      "x": 686,
+      "y": -151,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree3",
+      "persistentUuid": "f2423b52-3d02-412e-a9c6-564ecdfd0701",
+      "width": 0,
+      "x": 606,
+      "y": 29,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree3",
+      "persistentUuid": "d68f5d05-0caf-4f16-b90c-23f7cd43475e",
+      "width": 0,
+      "x": 438,
+      "y": 216,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Tree3",
+      "persistentUuid": "d3416962-5589-4582-8c6e-ad790cbf6133",
+      "width": 0,
+      "x": 703,
+      "y": 415,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -325,11 +427,11 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "atlasImage": "assets/graphics/atlas.png",
-        "rowCount": 10,
-        "columnCount": 6,
+        "atlasImage": "assets/graphics/atlas2.png",
+        "rowCount": 12,
+        "columnCount": 8,
         "tileSize": 48,
-        "tilesWithHitBox": "7,9,8"
+        "tilesWithHitBox": "9,10,11"
       }
     },
     {
@@ -1021,67 +1123,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "6c0a5d9b5c58364232fd9b91b162eee94eb777d0bef34a344acb1116cceb6021",
-      "name": "Tree4",
-      "persistentUuid": "8f5dbd66-531a-4f78-beb4-fa6911d556da",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Tree.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 143,
-                        "y": 0
-                      },
-                      {
-                        "x": 143,
-                        "y": 120
-                      },
-                      {
-                        "x": 0,
-                        "y": 120
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "7eaa81bdd06bbaa2be2e0e7e0af54cb72896b93f15a767cc47124b4bd5f41e37",
       "name": "bush",
       "persistentUuid": "a5711d4c-eb59-4b40-96d2-eff27ca20ea9",
@@ -1141,6 +1182,47 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewExternalTileMap",
+      "persistentUuid": "8a58f41f-3a2e-4f00-b6fd-f04705a63399",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "assets/tiles/blueberry_map.json",
+        "tilesetJsonFile": "",
+        "tilemapAtlasImage": "assets/tiles/atlas.png",
+        "displayMode": "visible",
+        "layerIndex": 0,
+        "levelIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewExternalTileMapMask",
+      "persistentUuid": "14e5ae73-dcb7-4360-8e0d-5595d25697e6",
+      "type": "TileMap::CollisionMask",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "assets/tiles/blueberry_map.json",
+        "tilesetJsonFile": "",
+        "collisionMaskTag": "block",
+        "layerIndex": 1,
+        "useAllLayers": true,
+        "debugMode": false,
+        "fillColor": "255;255;255",
+        "outlineColor": "255;255;255",
+        "fillOpacity": 64,
+        "outlineOpacity": 128,
+        "outlineSize": 1
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1162,10 +1244,13 @@
         "objectName": "butterfly"
       },
       {
-        "objectName": "Tree4"
+        "objectName": "bush"
       },
       {
-        "objectName": "bush"
+        "objectName": "NewExternalTileMap"
+      },
+      {
+        "objectName": "NewExternalTileMapMask"
       }
     ]
   },
@@ -1406,10 +1491,10 @@
               },
               "parameters": [
                 "player_character",
-                "program_map",
+                "NewExternalTileMapMask",
                 "",
                 "",
-                "yes"
+                "no"
               ]
             }
           ],
@@ -1420,7 +1505,7 @@
               },
               "parameters": [
                 "player_character",
-                "program_map",
+                "NewExternalTileMapMask",
                 "no"
               ]
             }
@@ -1869,6 +1954,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
     },
     {
       "name": "RemapForTopdown",

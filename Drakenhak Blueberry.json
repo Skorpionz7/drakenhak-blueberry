@@ -718,6 +718,62 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Desert/Objects/Plant/436a2917a1e34b96ec35704a7505cc02d428ed86ec318a5dd59cd1b5198bb82a_Bush (1).png",
           "name": "Bush (1).png"
         }
+      },
+      {
+        "file": "assets/graphics/atlas2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/atlas2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tiles/atlas.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/tiles/atlas.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tiles/blueberry_tiled.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/tiles/blueberry_tiled.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/tiles/atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/tiles/atlas.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tiles/blueberry_map.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/tiles/blueberry_map.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiles/atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tiles/atlas.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tiles/blueberry_map_ex.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/tiles/blueberry_map_ex.json",
+        "userAdded": false
       }
     ]
   },
@@ -843,6 +899,7 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "maxSpeed": 280,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
@@ -852,7 +909,6 @@
           "customIsometryAngle": 30,
           "deceleration": 800,
           "ignoreDefaultControls": false,
-          "maxSpeed": 200,
           "movementAngleOffset": 0,
           "rotateObject": true,
           "useLegacyTurnBack": false,
@@ -921,10 +977,10 @@
         "objectName": "load_button_obj"
       },
       {
-        "objectName": "dialog_box"
+        "objectName": "dialog_prompt"
       },
       {
-        "objectName": "dialog_prompt"
+        "objectName": "dialog_box"
       },
       {
         "objectName": "dialog_ok"
