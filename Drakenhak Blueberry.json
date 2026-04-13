@@ -774,6 +774,18 @@
         "metadata": "",
         "name": "assets/tiles/blueberry_map_ex.json",
         "userAdded": false
+      },
+      {
+        "file": "assets/Statue.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Statue.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/c3676d052c484eafe10c22c96bcec9892b3b54413527b04776a8eea0269c9f62_Statue.png",
+          "name": "Statue.png"
+        }
       }
     ]
   },

@@ -48,6 +48,9 @@
         },
         {
           "name": "bush"
+        },
+        {
+          "name": "Statue"
         }
       ]
     },
@@ -374,6 +377,23 @@
       "x": 703,
       "y": 415,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 256,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "Statue",
+      "persistentUuid": "d69993dd-fccf-4ab8-9adf-04c1cd9f7fcc",
+      "width": 256,
+      "x": 108,
+      "y": 247,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1223,6 +1243,67 @@
         "outlineOpacity": 128,
         "outlineSize": 1
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "d8f414ff6c969773cb3edef6117d7e9f9f303bd09b11ae01fdc376d60c3907da",
+      "name": "Statue",
+      "persistentUuid": "40518515-64f1-451b-810b-761931c64e36",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Statue.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 16
+                      },
+                      {
+                        "x": 53,
+                        "y": 16
+                      },
+                      {
+                        "x": 53,
+                        "y": 64
+                      },
+                      {
+                        "x": 13,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1251,6 +1332,9 @@
       },
       {
         "objectName": "NewExternalTileMapMask"
+      },
+      {
+        "objectName": "Statue"
       }
     ]
   },
@@ -1954,10 +2038,6 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
-    },
-    {
-      "name": "Platform",
-      "type": "PlatformBehavior::PlatformBehavior"
     },
     {
       "name": "RemapForTopdown",
