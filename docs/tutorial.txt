@@ -1,3 +1,5 @@
 Your mission is to nurture your dragon, or an entire brood if you wish, guiding them as they grow stronger and eventually sprout three mighty heads. When they reach this rare form, they become valuable enough to be sold to powerful women from renowned houses like Julia Naysen and Milla Saphyr—bringing you considerable profit.
 
 Pick up the butterflies with the E key and bring them to a reed bed; doing so will cause a fish to appear.
+
+Tap a fish to see its details. After that, you have two paths: deliver the fish to the golem for a reward, or feed it to your dragons to help them grow stronger.
