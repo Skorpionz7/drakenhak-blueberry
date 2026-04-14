@@ -921,6 +921,7 @@
         {
           "maxSpeed": 280,
           "name": "TopDownMovement",
+          "rotateObject": true,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
@@ -930,7 +931,6 @@
           "deceleration": 800,
           "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
-          "rotateObject": true,
           "useLegacyTurnBack": false,
           "viewpoint": "TopDown"
         }
