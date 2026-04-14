@@ -67,6 +67,65 @@
       "objects": [
         {
           "name": "butterfly"
+        },
+        {
+          "name": "Brown_Trout"
+        },
+        {
+          "name": "Clownfish"
+        },
+        {
+          "name": "Fish_Bone"
+        },
+        {
+          "name": "Eel"
+        },
+        {
+          "name": "Fossil"
+        },
+        {
+          "name": "Jellyfish"
+        },
+        {
+          "name": "Lake_Trout"
+        },
+        {
+          "name": "Octopus"
+        },
+        {
+          "name": "Tropical_Fish"
+        }
+      ]
+    },
+    {
+      "name": "all_fish",
+      "objects": [
+        {
+          "name": "Brown_Trout"
+        },
+        {
+          "name": "Clownfish"
+        },
+        {
+          "name": "Fish_Bone"
+        },
+        {
+          "name": "Eel"
+        },
+        {
+          "name": "Fossil"
+        },
+        {
+          "name": "Jellyfish"
+        },
+        {
+          "name": "Lake_Trout"
+        },
+        {
+          "name": "Octopus"
+        },
+        {
+          "name": "Tropical_Fish"
         }
       ]
     }
