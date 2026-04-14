@@ -794,6 +794,222 @@
         "name": "assets/graphics/oriental_rug.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Brown Trout_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Brown Trout_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/0ddf157f656a1a0ed3692c3b96299f21257ea5e8a7e90f790e0458083972338b_Brown Trout_No Shadow.png",
+          "name": "Brown Trout_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Brown Trout_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Brown Trout_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/6a4f8e5e02086fc7294615bbc1c8a0e15f12072e4c6a2b493252e4e13fb862af_Brown Trout_Shadow.png",
+          "name": "Brown Trout_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Clownfish_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Clownfish_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/0ec41d39fa4cb40a0174b1c396da63a6d59d08c16ff22b803430b88abc9ef13f_Clownfish_No Shadow.png",
+          "name": "Clownfish_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Clownfish_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Clownfish_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/a7b22e2b822172e0535fd8db84bd25157d4679d98130347347ece30137404ea2_Clownfish_Shadow.png",
+          "name": "Clownfish_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Eel_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Eel_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/5f793dc3d4653bed64c276e18950ebc65664d27bb41a52feb8bdd7913aadcff9_Eel_No Shadow.png",
+          "name": "Eel_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Eel_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Eel_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/c70743f81591956f9858dbebb4c2a654f673376b70402111e88e5304cf5942d6_Eel_Shadow.png",
+          "name": "Eel_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Fish-Bone_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fish-Bone_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/125201606a652bb5f14f71ae390702f0fb28c55ee3facc58bf93a66506baaf19_Fish-Bone_No Shadow.png",
+          "name": "Fish-Bone_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Fish-Bone_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fish-Bone_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/b4885b3d61d1f48120148d7612afdebc8f5ee498fa019b07bb3330fa6975f74d_Fish-Bone_Shadow.png",
+          "name": "Fish-Bone_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Fossil_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fossil_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/a2ee16b515fdeebac723919bf8d3b222996a061521c7f8073556385fe31eb739_Fossil_No Shadow.png",
+          "name": "Fossil_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Fossil_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fossil_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/7a7bc15afbf2db7ab79f4a52402512b0a74c0445d8ba9053d6f3a3a26a2d60bb_Fossil_Shadow.png",
+          "name": "Fossil_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Jellyfish_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jellyfish_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/c65ec6b136452e505a928c1556943c93401296c380759ea26b7ff28c1d481950_Jellyfish_No Shadow.png",
+          "name": "Jellyfish_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Jellyfish_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Jellyfish_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/44e787f8dd795fd7645817bc69db62882f3814cff2b9f1e076876094824ff670_Jellyfish_Shadow.png",
+          "name": "Jellyfish_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Lake Trout_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lake Trout_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/d99a76be3d605740b050e452eae3ed0033014690b0a83a4871f06d380e161a6e_Lake Trout_No Shadow.png",
+          "name": "Lake Trout_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Lake Trout_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lake Trout_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/b370d1d88e4a43d2a6bbf85bd65f043a8082a9d941f3bf7abecf01221b8c034d_Lake Trout_Shadow.png",
+          "name": "Lake Trout_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Octopus_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Octopus_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/ba9df94da2498403043ffc14a5128e01ad21764b0a776933519c5f6454d637f7_Octopus_No Shadow.png",
+          "name": "Octopus_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Octopus_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Octopus_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/f592150eafa101cc98403eb29baf700220cb9d7794771eb5c438b177368b02ea_Octopus_Shadow.png",
+          "name": "Octopus_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Tropical Fish_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tropical Fish_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/dde2051fd2f2ee163e5e91e26dc188d14b759add8dd3c789890d72d2fecef567_Tropical Fish_No Shadow.png",
+          "name": "Tropical Fish_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Tropical Fish_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tropical Fish_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/ee387da34307ed6df68d916512849c89eca7b931be06de04ec5521c460dab725_Tropical Fish_Shadow.png",
+          "name": "Tropical Fish_Shadow.png"
+        }
       }
     ]
   },
