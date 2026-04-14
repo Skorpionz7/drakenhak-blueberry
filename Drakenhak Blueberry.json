@@ -1010,6 +1010,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/ee387da34307ed6df68d916512849c89eca7b931be06de04ec5521c460dab725_Tropical Fish_Shadow.png",
           "name": "Tropical Fish_Shadow.png"
         }
+      },
+      {
+        "file": "assets/graphics/earthElemental.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/earthElemental.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },

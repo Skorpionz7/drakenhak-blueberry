@@ -51,6 +51,36 @@
         },
         {
           "name": "Statue"
+        },
+        {
+          "name": "earth_golem"
+        },
+        {
+          "name": "Brown_Trout"
+        },
+        {
+          "name": "Clownfish"
+        },
+        {
+          "name": "Fish_Bone"
+        },
+        {
+          "name": "Eel"
+        },
+        {
+          "name": "Fossil"
+        },
+        {
+          "name": "Jellyfish"
+        },
+        {
+          "name": "Lake_Trout"
+        },
+        {
+          "name": "Octopus"
+        },
+        {
+          "name": "Tropical_Fish"
         }
       ]
     },
@@ -458,6 +488,22 @@
       "x": 202,
       "y": 577,
       "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "earth_golem",
+      "persistentUuid": "62fdaa5b-2023-4ff8-9598-8a52d3cb0bd6",
+      "width": 0,
+      "x": 2202,
+      "y": -317,
+      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2473,6 +2519,68 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "earth_golem",
+      "persistentUuid": "3e213c34-7d22-4b8d-b0de-aecf0e1e9501",
+      "preScale": 1.077,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/earthElemental.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 1
+                      },
+                      {
+                        "x": 57,
+                        "y": 62
+                      },
+                      {
+                        "x": 1,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2534,6 +2642,9 @@
       },
       {
         "objectName": "Tropical_Fish"
+      },
+      {
+        "objectName": "earth_golem"
       }
     ]
   },
