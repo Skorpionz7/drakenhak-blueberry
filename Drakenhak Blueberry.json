@@ -1018,6 +1018,14 @@
         "name": "assets/graphics/earthElemental.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/graphics/green_oriental_rug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/green_oriental_rug.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },

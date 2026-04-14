@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.510692996797389,
+    "zoomFactor": 1.3230126160888327,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -504,6 +504,25 @@
       "x": 2202,
       "y": -317,
       "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "green_carpet",
+      "persistentUuid": "6f2ee3bf-9169-4345-81c8-882f0b8fe3c2",
+      "sealed": true,
+      "width": 128,
+      "x": 2185,
+      "y": -382,
+      "zOrder": 32,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2525,7 +2544,6 @@
       "assetStoreId": "",
       "name": "earth_golem",
       "persistentUuid": "3e213c34-7d22-4b8d-b0de-aecf0e1e9501",
-      "preScale": 1.077,
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2572,6 +2590,67 @@
                       {
                         "x": 1,
                         "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "green_carpet",
+      "persistentUuid": "a9c4d4d6-4da4-44d0-8d24-0e08fbc1de72",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/green_oriental_rug.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 96,
+                        "y": 0
+                      },
+                      {
+                        "x": 96,
+                        "y": 96
+                      },
+                      {
+                        "x": 0,
+                        "y": 96
                       }
                     ]
                   ]
@@ -2645,6 +2724,9 @@
       },
       {
         "objectName": "earth_golem"
+      },
+      {
+        "objectName": "green_carpet"
       }
     ]
   },
