@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3216911764705894,
+    "zoomFactor": 1.783164887694543,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -245,8 +245,8 @@
       "name": "to_menu_button",
       "persistentUuid": "681c0c7d-8454-4f1a-96f7-c97f30201bd4",
       "width": 118,
-      "x": 2783,
-      "y": 1317,
+      "x": 2755,
+      "y": 1277,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -262,8 +262,8 @@
       "name": "to_layout_button",
       "persistentUuid": "fa71760a-6cdf-460d-9213-d17ad39da8e3",
       "width": 142,
-      "x": 2623,
-      "y": 1308,
+      "x": 2589,
+      "y": 1280,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -287,15 +287,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2560,
       "keepRatio": true,
       "layer": "",
       "name": "NewExternalTileMapMask",
       "persistentUuid": "84e6800c-8771-4731-8d52-26d796f48c66",
-      "width": 0,
+      "width": 2560,
       "x": 10,
-      "y": -1210,
+      "y": -1215,
       "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
@@ -394,6 +395,25 @@
       "x": 108,
       "y": 247,
       "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "carpet",
+      "persistentUuid": "d54e9625-7b60-4d0a-a7a5-8afa1fd510b7",
+      "sealed": true,
+      "width": 128,
+      "x": 202,
+      "y": 577,
+      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1304,6 +1324,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "carpet",
+      "persistentUuid": "ecd01255-f171-4079-89f9-9aa9ffd02aef",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/oriental_rug.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 96,
+                        "y": 0
+                      },
+                      {
+                        "x": 96,
+                        "y": 96
+                      },
+                      {
+                        "x": 0,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1335,6 +1416,9 @@
       },
       {
         "objectName": "Statue"
+      },
+      {
+        "objectName": "carpet"
       }
     ]
   },

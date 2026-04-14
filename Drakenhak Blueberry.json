@@ -786,6 +786,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Objects/c3676d052c484eafe10c22c96bcec9892b3b54413527b04776a8eea0269c9f62_Statue.png",
           "name": "Statue.png"
         }
+      },
+      {
+        "file": "assets/graphics/oriental_rug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/oriental_rug.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
