@@ -3,3 +3,5 @@ Your mission is to nurture your dragon, or an entire brood if you wish, guiding 
 Pick up the butterflies with the E key and bring them to a reed bed; doing so will cause a fish to appear.
 
 Tap a fish to see its details. After that, you have two paths: deliver the fish to the golem for a reward, or feed it to your dragons to help them grow stronger.
+
+Walk up to a character and press E to learn what they’re up to.
