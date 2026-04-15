@@ -3138,48 +3138,69 @@
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "monster_dialogue_text",
-                    "0",
-                    "0",
-                    "\"menu_layer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "monster_dialogue_text",
-                    "=",
-                    " \"[shadow=red]\"+talkers.say_text+\"[/shadow]\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetXY"
-                  },
-                  "parameters": [
-                    "monster_dialogue_text",
-                    "=",
-                    "talkers.X() + talkers.Width() / 2 - monster_dialogue_text.Width()/ 2",
-                    "=",
-                    "talkers.Y() - monster_dialogue_text.Height()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "monster_dialogue_text",
-                    "\"end_text\""
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "talkers",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "player_character",
+                        "talkers",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "monster_dialogue_text",
+                        "0",
+                        "0",
+                        "\"menu_layer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "monster_dialogue_text",
+                        "=",
+                        " \"[shadow=red]\"+talkers.say_text+\"[/shadow]\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "monster_dialogue_text",
+                        "=",
+                        "talkers.X() + talkers.Width() / 2 - monster_dialogue_text.Width()/ 2",
+                        "=",
+                        "talkers.Y() - monster_dialogue_text.Height()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "monster_dialogue_text",
+                        "\"end_text\""
+                      ]
+                    }
                   ]
                 }
               ]
