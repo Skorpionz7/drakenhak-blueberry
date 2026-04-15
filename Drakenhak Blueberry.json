@@ -1026,6 +1026,18 @@
         "name": "assets/graphics/green_oriental_rug.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Small plant 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Small plant 2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Foliage Pack (100 assets)/Plant/93076389aa26c1cb226895e4b5cdf6f9b7c0c701133e610fba408c5b563096cc_Small plant 2.png",
+          "name": "Small plant 2.png"
+        }
       }
     ]
   },
@@ -1406,6 +1418,11 @@
           "value": 520
         }
       ]
+    },
+    {
+      "name": "random_number1",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [

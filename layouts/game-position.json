@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.1586486374405107,
+    "zoomFactor": 0.49714937176961504,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -81,6 +81,9 @@
         },
         {
           "name": "Tropical_Fish"
+        },
+        {
+          "name": "reed_bed"
         }
       ]
     },
@@ -89,41 +92,6 @@
       "objects": [
         {
           "name": "butterfly"
-        }
-      ]
-    },
-    {
-      "name": "carry",
-      "objects": [
-        {
-          "name": "butterfly"
-        },
-        {
-          "name": "Brown_Trout"
-        },
-        {
-          "name": "Clownfish"
-        },
-        {
-          "name": "Fish_Bone"
-        },
-        {
-          "name": "Eel"
-        },
-        {
-          "name": "Fossil"
-        },
-        {
-          "name": "Jellyfish"
-        },
-        {
-          "name": "Lake_Trout"
-        },
-        {
-          "name": "Octopus"
-        },
-        {
-          "name": "Tropical_Fish"
         }
       ]
     },
@@ -170,6 +138,41 @@
     {
       "name": "menu_movers",
       "objects": []
+    },
+    {
+      "name": "carry",
+      "objects": [
+        {
+          "name": "Brown_Trout"
+        },
+        {
+          "name": "Clownfish"
+        },
+        {
+          "name": "Fish_Bone"
+        },
+        {
+          "name": "Eel"
+        },
+        {
+          "name": "Fossil"
+        },
+        {
+          "name": "Jellyfish"
+        },
+        {
+          "name": "Lake_Trout"
+        },
+        {
+          "name": "Octopus"
+        },
+        {
+          "name": "Tropical_Fish"
+        },
+        {
+          "name": "butterfly"
+        }
+      ]
     }
   ],
   "variables": [
@@ -182,6 +185,57 @@
       "name": "temp_tween_yz_speed",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "fish_struct",
+      "type": "structure",
+      "children": [
+        {
+          "name": "1",
+          "type": "string",
+          "value": "Brown_Trout"
+        },
+        {
+          "name": "2",
+          "type": "string",
+          "value": "Clownfish"
+        },
+        {
+          "name": "3",
+          "type": "string",
+          "value": "Eel"
+        },
+        {
+          "name": "4",
+          "type": "string",
+          "value": "Fish_Bone"
+        },
+        {
+          "name": "5",
+          "type": "string",
+          "value": "Fossil"
+        },
+        {
+          "name": "6",
+          "type": "string",
+          "value": "Jellyfish"
+        },
+        {
+          "name": "7",
+          "type": "string",
+          "value": "Lake_Trout"
+        },
+        {
+          "name": "8",
+          "type": "string",
+          "value": "Octopus"
+        },
+        {
+          "name": "9",
+          "type": "string",
+          "value": "Tropical_Fish"
+        }
+      ]
     }
   ],
   "instances": [
@@ -585,6 +639,228 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "65ab37b2-4a6d-4ff7-8f13-d6658e3f6c4f",
+      "width": 0,
+      "x": 1102,
+      "y": -1209,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "391547dd-ff8f-463e-bbb0-927302f96e57",
+      "width": 0,
+      "x": 1166,
+      "y": -1108,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "744615a3-346a-472d-8cc5-e3d05fb805ea",
+      "width": 0,
+      "x": 1271,
+      "y": -1009,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "reed_bed",
+      "persistentUuid": "9aa328e0-9aa8-4498-8fd8-256724caf2d5",
+      "width": 0,
+      "x": 1381,
+      "y": -904,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "d02e5f7e-c354-4f70-8460-1b3abd15ff2e",
+      "width": 0,
+      "x": 1530,
+      "y": -818,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "b444ff1e-5b86-4447-93c2-20ae0872303e",
+      "width": 0,
+      "x": 1667,
+      "y": -751,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "b5aaefb8-36a7-476e-941d-b6564f6ec40a",
+      "width": 0,
+      "x": 1836,
+      "y": -689,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "dfb489a4-2937-41ee-9db1-3428eb742555",
+      "width": 0,
+      "x": 2103,
+      "y": -619,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "locked": true,
+      "name": "reed_bed",
+      "persistentUuid": "9564b9c4-b0e5-41e6-a8bc-656559242130",
+      "width": 0,
+      "x": 2388,
+      "y": -565,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Octopus",
+      "persistentUuid": "6d6568a1-4750-423f-ba88-410f3c845930",
+      "width": 0,
+      "x": 717,
+      "y": 262,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -736,7 +1012,12 @@
           "booleanParameters": {}
         }
       ],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "assets/graphics/butterfly spritesheet",
@@ -2794,6 +3075,73 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "d2023d27e69aa754b30bc01f4a96ab0dc4eb48ac93b3fd05eb255417aa4f8f4f",
+      "name": "reed_bed",
+      "persistentUuid": "78e15da6-cb61-4e5f-8cf0-2c57fab7ec88",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Small plant 2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 104,
+                        "y": 0
+                      },
+                      {
+                        "x": 104,
+                        "y": 90
+                      },
+                      {
+                        "x": 0,
+                        "y": 90
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2864,6 +3212,9 @@
       },
       {
         "objectName": "monster_dialogue_text"
+      },
+      {
+        "objectName": "reed_bed"
       }
     ]
   },
@@ -3202,6 +3553,63 @@
                     "carry"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "reed_bed",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "=",
+                        "reed_bed.X()+reed_bed.Width()/2-butterfly.Width()/2",
+                        "=",
+                        "reed_bed.Y()+reed_bed.Height()/2-butterfly.Height()/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "Tween",
+                        "\"butterfly_rotate\"",
+                        "360*5",
+                        "\"easeInOutQuad\"",
+                        "4",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetZOrder"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "=",
+                        "reed_bed.ZOrder()+1"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -3252,6 +3660,15 @@
                     "player_character.X()+player_character.Width()/2-carry.Width()/2",
                     "=",
                     "player_character.Y()+player_character.Height()/2-carry.Height()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "carry",
+                    "\"z-order\""
                   ]
                 }
               ]
@@ -3438,7 +3855,7 @@
                   "parameters": [
                     "carry",
                     "=",
-                    "carry.Y()+carry.Height()"
+                    "player_character.Y()+player_character.Height()+1"
                   ]
                 }
               ]
@@ -3585,6 +4002,192 @@
                 "talkers",
                 "=",
                 "talkers.tween_z"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "butterfly",
+                "Tween",
+                "\"butterfly_rotate\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "butterfly",
+                "Tween",
+                "\"butterfly_rotate\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "butterfly",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"r\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"g\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "save_game.butterflys[temp_i][\"b\"]",
+                "=",
+                "RandomFloatInRange(1,5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+              },
+              "parameters": [
+                "butterfly",
+                "Effect",
+                "\"Effect\"",
+                "\"red\"",
+                "save_game.butterflys[temp_i][\"r\"]"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+              },
+              "parameters": [
+                "butterfly",
+                "Effect",
+                "\"Effect\"",
+                "\"green\"",
+                "save_game.butterflys[temp_i][\"g\"]"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+              },
+              "parameters": [
+                "butterfly",
+                "Effect",
+                "\"Effect\"",
+                "\"blue\"",
+                "save_game.butterflys[temp_i][\"b\"]"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "reed_bed",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "all_fish",
+                    "fish_struct[reed_bed.id]",
+                    "0",
+                    "0",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "=",
+                    "butterfly.X()+butterfly.Width()/2-all_fish.Width()/2",
+                    "=",
+                    "butterfly.Y()+butterfly.Height()/2-all_fish.Height()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "=",
+                    "reed_bed.ZOrder()+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "\"z-order\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "=",
+                    "RandomInRange(butterfly_position.x,butterfly_position.x2)",
+                    "=",
+                    "RandomInRange(butterfly_position.y,butterfly_position.y2)"
+                  ]
+                }
               ]
             }
           ]
