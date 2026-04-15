@@ -67,6 +67,25 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "menu_movers",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "menu_movers",
+            "=",
+            "player_character.X()+10*SceneWindowWidth()",
+            "=",
+            "player_character.Y()+10*SceneWindowHeight()"
+          ]
+        }
+      ]
     }
   ]
 }

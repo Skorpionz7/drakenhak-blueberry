@@ -213,7 +213,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "NewText",
+      "name": "monster_talk_text",
       "persistentUuid": "3d7a0928-6860-4bcf-8b16-2dbf83b47f5b",
       "width": 0,
       "x": 14,
@@ -388,7 +388,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "NewText",
+      "name": "monster_talk_text",
       "persistentUuid": "d6fefc59-97f2-469e-9a0a-990345832fbb",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -457,7 +457,7 @@
         "objectName": "bg_sprite"
       },
       {
-        "objectName": "NewText"
+        "objectName": "monster_talk_text"
       }
     ]
   },

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.3230126160888327,
+    "zoomFactor": 1.1586486374405107,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -158,6 +158,18 @@
           "name": "Tropical_Fish"
         }
       ]
+    },
+    {
+      "name": "talkers",
+      "objects": [
+        {
+          "name": "earth_golem"
+        }
+      ]
+    },
+    {
+      "name": "menu_movers",
+      "objects": []
     }
   ],
   "variables": [],
@@ -2546,7 +2558,13 @@
       "persistentUuid": "3e213c34-7d22-4b8d-b0de-aecf0e1e9501",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "say_text",
+          "type": "string",
+          "value": "I would like to purchase some fish. Could you provide me with a portion?"
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -2660,6 +2678,25 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "monster_dialogue_text",
+      "persistentUuid": "88ce6675-5d62-4f88-962c-3d5b775d6864",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": " [shadow=red]Empty dialogue x[/shadow] ",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Arial",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2727,6 +2764,9 @@
       },
       {
         "objectName": "green_carpet"
+      },
+      {
+        "objectName": "monster_dialogue_text"
       }
     ]
   },
@@ -3080,6 +3120,104 @@
                     "player_character.Y()+player_character.Height()/2-carry.Height()/2"
                   ]
                 }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player_character",
+                    "talkers",
+                    "",
+                    "",
+                    "yes"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "monster_dialogue_text",
+                    "0",
+                    "0",
+                    "\"menu_layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "monster_dialogue_text",
+                    "=",
+                    " \"[shadow=red]\"+talkers.say_text+\"[/shadow]\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "monster_dialogue_text",
+                    "=",
+                    "talkers.X() + talkers.Width() / 2 - monster_dialogue_text.Width()/ 2",
+                    "=",
+                    "talkers.Y() - monster_dialogue_text.Height()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "monster_dialogue_text",
+                    "\"end_text\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "monster_dialogue_text",
+                "\"end_text\"",
+                ">=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveObjectTimer"
+              },
+              "parameters": [
+                "monster_dialogue_text",
+                "\"end_text\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "monster_dialogue_text",
+                ""
               ]
             }
           ]
