@@ -845,22 +845,6 @@
           "value": 9
         }
       ]
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "z-order",
-      "name": "Octopus",
-      "persistentUuid": "6d6568a1-4750-423f-ba88-410f3c845930",
-      "width": 0,
-      "x": 717,
-      "y": 262,
-      "zOrder": 34,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
