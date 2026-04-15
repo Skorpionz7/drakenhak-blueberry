@@ -3560,6 +3560,54 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "Tween::IsPlaying"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "Tween",
+                        "\"butterfly_rotate\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::StopTween"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "Tween",
+                        "\"butterfly_rotate\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::RemoveTween"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "Tween",
+                        "\"butterfly_rotate\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "butterfly",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "CollisionNP"
                       },
                       "parameters": [
@@ -3669,6 +3717,16 @@
                   "parameters": [
                     "carry",
                     "\"z-order\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "carry",
+                    "=",
+                    "player_character.Y()+player_character.Height()+1"
                   ]
                 }
               ]
@@ -4040,72 +4098,6 @@
                 "=",
                 "0"
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "save_game.butterflys[temp_i][\"r\"]",
-                "=",
-                "RandomFloatInRange(1,5)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "save_game.butterflys[temp_i][\"g\"]",
-                "=",
-                "RandomFloatInRange(1,5)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "save_game.butterflys[temp_i][\"b\"]",
-                "=",
-                "RandomFloatInRange(1,5)"
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
-              },
-              "parameters": [
-                "butterfly",
-                "Effect",
-                "\"Effect\"",
-                "\"red\"",
-                "save_game.butterflys[temp_i][\"r\"]"
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
-              },
-              "parameters": [
-                "butterfly",
-                "Effect",
-                "\"Effect\"",
-                "\"green\"",
-                "save_game.butterflys[temp_i][\"g\"]"
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
-              },
-              "parameters": [
-                "butterfly",
-                "Effect",
-                "\"Effect\"",
-                "\"blue\"",
-                "save_game.butterflys[temp_i][\"b\"]"
-              ]
             }
           ],
           "events": [
@@ -4126,6 +4118,72 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "save_game.butterflys[butterfly.id][\"r\"]",
+                    "=",
+                    "RandomFloatInRange(1,5)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "save_game.butterflys[butterfly.id][\"g\"]",
+                    "=",
+                    "RandomFloatInRange(1,5)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "save_game.butterflys[butterfly.id][\"b\"]",
+                    "=",
+                    "RandomFloatInRange(1,5)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "Effect",
+                    "\"Effect\"",
+                    "\"red\"",
+                    "save_game.butterflys[butterfly.id][\"r\"]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "Effect",
+                    "\"Effect\"",
+                    "\"green\"",
+                    "save_game.butterflys[butterfly.id][\"g\"]"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
+                  },
+                  "parameters": [
+                    "butterfly",
+                    "Effect",
+                    "\"Effect\"",
+                    "\"blue\"",
+                    "save_game.butterflys[butterfly.id][\"b\"]"
+                  ]
+                },
                 {
                   "type": {
                     "value": "CreateByName"
@@ -4153,29 +4211,13 @@
                 },
                 {
                   "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "all_fish",
-                    "=",
-                    "reed_bed.ZOrder()+1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ChangeLayer"
                   },
                   "parameters": [
                     "all_fish",
                     "\"z-order\""
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+                },
                 {
                   "type": {
                     "value": "SetXY"
@@ -4186,6 +4228,60 @@
                     "RandomInRange(butterfly_position.x,butterfly_position.x2)",
                     "=",
                     "RandomInRange(butterfly_position.y,butterfly_position.y2)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "butterfly",
+                    "player_character",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "=",
+                    "player_character.ZOrder()+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::RemoveLinkBetween"
+                  },
+                  "parameters": [
+                    "",
+                    "butterfly",
+                    "player_character"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "=",
+                    "reed_bed.ZOrder()+1"
                   ]
                 }
               ]
