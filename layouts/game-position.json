@@ -172,7 +172,18 @@
       "objects": []
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "temp_tween_yz",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "temp_tween_yz_speed",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -519,6 +530,36 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
+        {
+          "name": "speed2",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "speed1",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "y2",
+          "type": "number",
+          "value": -128
+        },
+        {
+          "name": "x2",
+          "type": "number",
+          "value": 2313
+        },
+        {
+          "name": "y1",
+          "type": "number",
+          "value": -383
+        },
+        {
+          "name": "x1",
+          "type": "number",
+          "value": 2121
+        },
         {
           "name": "say_text",
           "type": "string",
@@ -2569,10 +2610,60 @@
           "name": "say_text",
           "type": "string",
           "value": "Empty text x"
+        },
+        {
+          "name": "x1",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "x2",
+          "type": "number",
+          "value": 1000
+        },
+        {
+          "name": "y1",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "y2",
+          "type": "number",
+          "value": 1000
+        },
+        {
+          "name": "speed1",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "speed2",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "tween_z",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "tween_last",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "last_z",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2985,6 +3076,43 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "talkers",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move\"",
+                "0",
+                "0",
+                "\"easeInOutQuad\"",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move_z\"",
+                "tween_z",
+                "0",
+                "\"easeInOutQuad\"",
+                "0",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3329,6 +3457,143 @@
           "conditions": [
             {
               "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::RemoveTween"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move_z\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "talkers",
+                "tween_z",
+                "=",
+                "talkers.Y()+talkers.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temp_tween_yz",
+                "=",
+                "RandomInRange(talkers.y1, talkers.y2-talkers.Height())"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temp_tween_yz_speed",
+                "=",
+                "RandomFloatInRange(talkers.speed1, talkers.speed2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectVariableTween3"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move_z\"",
+                "tween_z",
+                "temp_tween_yz+talkers.Height()",
+                "\"easeInOutQuad\"",
+                "temp_tween_yz_speed",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "talkers",
+                "Tween",
+                "\"talker_move\"",
+                "RandomInRange(talkers.x1, talkers.x2-talkers.Width())",
+                "temp_tween_yz",
+                "\"easeInOutQuad\"",
+                "temp_tween_yz_speed",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "talkers",
+                "last_z",
+                "!=",
+                "talkers.tween_z"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "talkers",
+                "last_z",
+                "=",
+                "talkers.tween_z"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetZOrder"
+              },
+              "parameters": [
+                "talkers",
+                "=",
+                "talkers.tween_z"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
@@ -3615,6 +3880,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
