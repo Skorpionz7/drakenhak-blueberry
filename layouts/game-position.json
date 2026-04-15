@@ -518,7 +518,13 @@
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "say_text",
+          "type": "string",
+          "value": "I would like to purchase some fish. Could you provide me with a portion?"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -2562,7 +2568,7 @@
         {
           "name": "say_text",
           "type": "string",
-          "value": "I would like to purchase some fish. Could you provide me with a portion?"
+          "value": "Empty text x"
         }
       ],
       "effects": [],
