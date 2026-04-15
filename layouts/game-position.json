@@ -4229,6 +4229,16 @@
                     "=",
                     "RandomInRange(butterfly_position.y,butterfly_position.y2)"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "all_fish",
+                    "=",
+                    "reed_bed.ZOrder()+1"
+                  ]
                 }
               ]
             },
@@ -4266,22 +4276,6 @@
                     "",
                     "butterfly",
                     "player_character"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Else",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "all_fish",
-                    "=",
-                    "reed_bed.ZOrder()+1"
                   ]
                 }
               ]
