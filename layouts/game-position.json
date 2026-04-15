@@ -851,7 +851,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "z-order",
       "name": "Octopus",
       "persistentUuid": "6d6568a1-4750-423f-ba88-410f3c845930",
       "width": 0,
@@ -4240,42 +4240,44 @@
                     "reed_bed.ZOrder()+1"
                   ]
                 }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "butterfly",
-                    "player_character",
-                    ""
-                  ]
-                }
               ],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "all_fish",
-                    "=",
-                    "player_character.ZOrder()+1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::RemoveLinkBetween"
-                  },
-                  "parameters": [
-                    "",
-                    "butterfly",
-                    "player_character"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "butterfly",
+                        "player_character",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetZOrder"
+                      },
+                      "parameters": [
+                        "all_fish",
+                        "=",
+                        "player_character.ZOrder()+1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "LinkedObjects::RemoveLinkBetween"
+                      },
+                      "parameters": [
+                        "",
+                        "butterfly",
+                        "player_character"
+                      ]
+                    }
                   ]
                 }
               ]
