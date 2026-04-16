@@ -185,57 +185,6 @@
       "name": "temp_tween_yz_speed",
       "type": "number",
       "value": 0
-    },
-    {
-      "name": "fish_struct",
-      "type": "structure",
-      "children": [
-        {
-          "name": "1",
-          "type": "string",
-          "value": "Brown_Trout"
-        },
-        {
-          "name": "2",
-          "type": "string",
-          "value": "Clownfish"
-        },
-        {
-          "name": "3",
-          "type": "string",
-          "value": "Eel"
-        },
-        {
-          "name": "4",
-          "type": "string",
-          "value": "Fish_Bone"
-        },
-        {
-          "name": "5",
-          "type": "string",
-          "value": "Fossil"
-        },
-        {
-          "name": "6",
-          "type": "string",
-          "value": "Jellyfish"
-        },
-        {
-          "name": "7",
-          "type": "string",
-          "value": "Lake_Trout"
-        },
-        {
-          "name": "8",
-          "type": "string",
-          "value": "Octopus"
-        },
-        {
-          "name": "9",
-          "type": "string",
-          "value": "Tropical_Fish"
-        }
-      ]
     }
   ],
   "instances": [
@@ -3284,7 +3233,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::Repeat",
-          "repeatExpression": "save_game.butterflys[\"amount\"]",
+          "repeatExpression": "save_game.butterflies[\"amount\"]",
           "conditions": [],
           "actions": [
             {
@@ -3307,7 +3256,7 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "save_game.butterflys[temp_i][\"used\"]",
+                    "save_game.butterflies[temp_i][\"used\"]",
                     "True",
                     "="
                   ]
@@ -3321,8 +3270,8 @@
                   "parameters": [
                     "",
                     "butterfly",
-                    "save_game.butterflys[temp_i][\"x\"]",
-                    "save_game.butterflys[temp_i][\"y\"]",
+                    "save_game.butterflies[temp_i][\"x\"]",
+                    "save_game.butterflies[temp_i][\"y\"]",
                     ""
                   ]
                 },
@@ -3335,7 +3284,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"red\"",
-                    "save_game.butterflys[temp_i][\"r\"]"
+                    "save_game.butterflies[temp_i][\"r\"]"
                   ]
                 },
                 {
@@ -3347,7 +3296,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"green\"",
-                    "save_game.butterflys[temp_i][\"g\"]"
+                    "save_game.butterflies[temp_i][\"g\"]"
                   ]
                 },
                 {
@@ -3359,7 +3308,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"blue\"",
-                    "save_game.butterflys[temp_i][\"b\"]"
+                    "save_game.butterflies[temp_i][\"b\"]"
                   ]
                 },
                 {
@@ -3392,6 +3341,37 @@
                     "Random(butterfly.AnimationFrameCount() - 1)"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "save_game.fish",
+          "valueIteratorVariableName": "",
+          "keyIteratorVariableName": "temp1",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CreateByName"
+              },
+              "parameters": [
+                "",
+                "all_fish",
+                "fish_struct[save_game.fish[ToNumber(temp1)].type]",
+                "save_game.fish[ToNumber(temp1)].x",
+                "save_game.fish[ToNumber(temp1)].y",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "all_fish",
+                "\"z-order\""
               ]
             }
           ]
@@ -4107,7 +4087,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "save_game.butterflys[butterfly.id][\"r\"]",
+                    "save_game.butterflies[butterfly.id][\"r\"]",
                     "=",
                     "RandomFloatInRange(1,5)"
                   ]
@@ -4117,7 +4097,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "save_game.butterflys[butterfly.id][\"g\"]",
+                    "save_game.butterflies[butterfly.id][\"g\"]",
                     "=",
                     "RandomFloatInRange(1,5)"
                   ]
@@ -4127,7 +4107,7 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "save_game.butterflys[butterfly.id][\"b\"]",
+                    "save_game.butterflies[butterfly.id][\"b\"]",
                     "=",
                     "RandomFloatInRange(1,5)"
                   ]
@@ -4141,7 +4121,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"red\"",
-                    "save_game.butterflys[butterfly.id][\"r\"]"
+                    "save_game.butterflies[butterfly.id][\"r\"]"
                   ]
                 },
                 {
@@ -4153,7 +4133,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"green\"",
-                    "save_game.butterflys[butterfly.id][\"g\"]"
+                    "save_game.butterflies[butterfly.id][\"g\"]"
                   ]
                 },
                 {
@@ -4165,7 +4145,7 @@
                     "Effect",
                     "\"Effect\"",
                     "\"blue\"",
-                    "save_game.butterflys[butterfly.id][\"b\"]"
+                    "save_game.butterflies[butterfly.id][\"b\"]"
                   ]
                 },
                 {

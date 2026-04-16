@@ -86,7 +86,7 @@
                 "value": "SetBooleanVariable"
               },
               "parameters": [
-                "save_game.butterflys[temp_i][\"used\"]",
+                "save_game.butterflies[temp_i][\"used\"]",
                 "True",
                 ""
               ]
@@ -96,7 +96,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "save_game.butterflys[temp_i][\"x\"]",
+                "save_game.butterflies[temp_i][\"x\"]",
                 "=",
                 "butterflys.X()"
               ]
@@ -106,11 +106,74 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "save_game.butterflys[temp_i][\"y\"]",
+                "save_game.butterflies[temp_i][\"y\"]",
                 "=",
                 "butterflys.Y()"
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "temp_i",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "all_fish",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "temp_i",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.fish[temp_i][\"type\"]",
+            "=",
+            "all_fish.id"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.fish[temp_i][\"x\"]",
+            "=",
+            "all_fish.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "save_game.fish[temp_i][\"y\"]",
+            "=",
+            "all_fish.Y()"
           ]
         }
       ]

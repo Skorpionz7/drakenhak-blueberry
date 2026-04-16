@@ -1277,7 +1277,13 @@
       "type": "structure",
       "children": [
         {
-          "name": "butterflys",
+          "name": "butterflies",
+          "type": "structure",
+          "children": []
+        },
+        {
+          "folded": true,
+          "name": "fish",
           "type": "structure",
           "children": []
         },
@@ -1423,6 +1429,57 @@
       "name": "random_number1",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "fish_struct",
+      "type": "structure",
+      "children": [
+        {
+          "name": "1",
+          "type": "string",
+          "value": "Brown_Trout"
+        },
+        {
+          "name": "2",
+          "type": "string",
+          "value": "Clownfish"
+        },
+        {
+          "name": "3",
+          "type": "string",
+          "value": "Eel"
+        },
+        {
+          "name": "4",
+          "type": "string",
+          "value": "Fish_Bone"
+        },
+        {
+          "name": "5",
+          "type": "string",
+          "value": "Fossil"
+        },
+        {
+          "name": "6",
+          "type": "string",
+          "value": "Jellyfish"
+        },
+        {
+          "name": "7",
+          "type": "string",
+          "value": "Lake_Trout"
+        },
+        {
+          "name": "8",
+          "type": "string",
+          "value": "Octopus"
+        },
+        {
+          "name": "9",
+          "type": "string",
+          "value": "Tropical_Fish"
+        }
+      ]
     }
   ],
   "layouts": [
