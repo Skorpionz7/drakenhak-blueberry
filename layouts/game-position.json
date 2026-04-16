@@ -84,6 +84,9 @@
         },
         {
           "name": "reed_bed"
+        },
+        {
+          "name": "elephant_statue"
         }
       ]
     },
@@ -794,6 +797,22 @@
           "value": 9
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "z-order",
+      "name": "elephant_statue",
+      "persistentUuid": "a87b3fca-8875-49bc-9fbe-4fc3a6ee32ed",
+      "width": 0,
+      "x": 577,
+      "y": 460,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3075,6 +3094,68 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "elephant_statue",
+      "persistentUuid": "08c6652a-17ca-4ede-bead-9755e7fcd35d",
+      "preScale": 3,
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/statue2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 0
+                      },
+                      {
+                        "x": 31,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3148,6 +3229,9 @@
       },
       {
         "objectName": "reed_bed"
+      },
+      {
+        "objectName": "elephant_statue"
       }
     ]
   },
