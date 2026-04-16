@@ -486,16 +486,6 @@
             "False",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "save_game.id",
-            "=",
-            "RandomInRange(100,999)"
-          ]
         }
       ]
     },
