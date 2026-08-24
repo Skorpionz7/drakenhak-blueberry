@@ -1,7 +1,8 @@
 {
   "firstLayout": "",
+  "previewLayout": "Main Menu",
   "gdVersion": {
-    "build": 265,
+    "build": 280,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -18,6 +19,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "scaleOuter",
     "templateSlug": "",
+    "useDeprecatedZeroAsDefaultStringVariable": true,
     "version": "1.0.0",
     "name": "Drakenhak Blueberry",
     "description": "",
@@ -1046,6 +1048,69 @@
         "name": "assets/graphics/statue2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "console.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "console.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/console.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/console.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/On Screen Controls Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/16e804dda11f82902d6b7469420d7b3b81d68ef00af71783070dd284114e8cdc_On Screen Controls Button_Hovered.png",
+          "name": "On Screen Controls Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/On Screen Controls Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/174644b98156cc55e10a4eb991aebb06e0a2c9f98915abb1422cababc3124de3_On Screen Controls Button_Idle.png",
+          "name": "On Screen Controls Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/On Screen Controls Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "On Screen Controls Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5a44f1cb97ef7da59c97179346b71d3f5b913af0208795784707c062fc20749f_On Screen Controls Button_Pressed.png",
+          "name": "On Screen Controls Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Roboto-Bold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Bold.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3bd40ac788d44626fd640ec67ef04ab0364816b5e8c831f2077bff8805cfe689_Roboto-Bold.ttf",
+          "name": "Roboto-Bold.ttf"
+        }
       }
     ]
   },
@@ -1059,6 +1124,7 @@
       "variables": [
         {
           "name": "id",
+          "persistentUuid": "98ea6493-024d-4bae-873a-c44a941e0d1a",
           "type": "number",
           "value": 0
         }
@@ -1170,10 +1236,10 @@
           "Topdown": "TopDownMovement"
         },
         {
-          "maxSpeed": 280,
           "name": "TopDownMovement",
-          "rotateObject": true,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 280,
+          "rotateObject": true,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1580,6 +1646,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/save-layout"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/move-console"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -1610,6 +1680,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/regex"
     }
   ],
   "externalLayouts": []

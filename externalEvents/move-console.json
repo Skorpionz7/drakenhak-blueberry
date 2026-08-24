@@ -1,0 +1,60 @@
+{
+  "associatedLayout": "Game Position",
+  "name": "Move Console",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "console_bg",
+            "=",
+            "player_character.X()+player_character.Width()/2-SceneWindowWidth()/2",
+            "=",
+            "player_character.Y()+player_character.Height()/2-SceneWindowHeight()/2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "console_text",
+            "=",
+            "player_character.X()+player_character.Width()/2-SceneWindowWidth()/2",
+            "=",
+            "player_character.Y()+player_character.Height()/2-SceneWindowHeight()/2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "console_input",
+            "=",
+            "player_character.X()+player_character.Width()/2-SceneWindowWidth()/2",
+            "=",
+            "player_character.Y()+player_character.Height()/2-SceneWindowHeight()/2+360-console_input.Height()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "console_enter",
+            "=",
+            "player_character.X()+player_character.Width()/2-SceneWindowWidth()/2+console_input.Width()",
+            "=",
+            "player_character.Y()+player_character.Height()/2-SceneWindowHeight()/2+360-console_enter.Height()"
+          ]
+        }
+      ]
+    }
+  ]
+}

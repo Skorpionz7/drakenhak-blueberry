@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49714937176961504,
+    "zoomFactor": 0.4971493717696151,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -139,10 +139,6 @@
       ]
     },
     {
-      "name": "menu_movers",
-      "objects": []
-    },
-    {
       "name": "carry",
       "objects": [
         {
@@ -176,16 +172,77 @@
           "name": "butterfly"
         }
       ]
+    },
+    {
+      "name": "console_items",
+      "objects": [
+        {
+          "name": "console_bg"
+        },
+        {
+          "name": "console_text"
+        },
+        {
+          "name": "console_input"
+        },
+        {
+          "name": "console_enter"
+        }
+      ]
     }
   ],
   "variables": [
     {
       "name": "temp_tween_yz",
+      "persistentUuid": "1143a79a-0f8a-416a-80a9-7be21be6e2a9",
       "type": "number",
       "value": 0
     },
     {
       "name": "temp_tween_yz_speed",
+      "persistentUuid": "100faaa3-89fe-4feb-b624-38bcadcd02ba",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "console_switch",
+      "persistentUuid": "377f23c5-de3d-4b3a-948e-413dc9270d6a",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "text_formatter",
+      "persistentUuid": "85680feb-879c-4257-aed0-8c308dd8746b",
+      "type": "array",
+      "children": []
+    },
+    {
+      "name": "text_formatter2",
+      "persistentUuid": "ce455351-8e93-4679-8b36-ecdffd87a687",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "text_formatter3",
+      "persistentUuid": "5fdbca4c-05d6-42e5-8640-b084244a2ef0",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "text_formatter4",
+      "persistentUuid": "e6a63988-9f09-47f9-a9bf-5befa661ae97",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "temp_int",
+      "persistentUuid": "0e151332-cb87-460e-97ad-a5487652ae62",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "temp_int2",
+      "persistentUuid": "8ef0b00a-35a5-406e-8dbf-06626dfa9acf",
       "type": "number",
       "value": 0
     }
@@ -337,8 +394,8 @@
       "name": "to_menu_button",
       "persistentUuid": "681c0c7d-8454-4f1a-96f7-c97f30201bd4",
       "width": 118,
-      "x": 2755,
-      "y": 1277,
+      "x": 2751,
+      "y": 1378,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -354,8 +411,8 @@
       "name": "to_layout_button",
       "persistentUuid": "fa71760a-6cdf-460d-9213-d17ad39da8e3",
       "width": 136,
-      "x": 2589,
-      "y": 1280,
+      "x": 2585,
+      "y": 1381,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -810,6 +867,71 @@
       "x": 577,
       "y": 460,
       "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "menu_layer",
+      "name": "console_bg",
+      "persistentUuid": "576bccbd-d4a0-4831-a89c-62fec01e1031",
+      "width": 0,
+      "x": 2818,
+      "y": 1685,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "menu_layer",
+      "name": "console_text",
+      "persistentUuid": "9eb366b2-8231-4c63-9d49-eaf543ffce92",
+      "width": 0,
+      "x": 2823,
+      "y": 1434,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 24,
+      "layer": "menu_layer",
+      "name": "console_input",
+      "persistentUuid": "de4ca39f-ccec-4102-8135-420fcd743a81",
+      "width": 1130,
+      "x": 3068,
+      "y": 1541,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 24,
+      "height": 24,
+      "keepRatio": true,
+      "layer": "menu_layer",
+      "name": "console_enter",
+      "persistentUuid": "414c8654-9d7a-4087-b6cf-015d8b567f3e",
+      "width": 152,
+      "x": 4214,
+      "y": 1502,
+      "zOrder": 38,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1798,6 +1920,7 @@
       "variables": [
         {
           "name": "id",
+          "persistentUuid": "5b2aaa2a-9908-42e7-a991-cffd22128b51",
           "type": "number",
           "value": 1
         }
@@ -1914,6 +2037,7 @@
       "variables": [
         {
           "name": "id",
+          "persistentUuid": "43626e00-9e73-47f5-bab8-d1fde0d81ba3",
           "type": "number",
           "value": 2
         }
@@ -3156,6 +3280,159 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "console_bg",
+      "persistentUuid": "40531b6c-38b0-414d-95bb-e770402795e2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/console.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 360
+                      },
+                      {
+                        "x": 0,
+                        "y": 360
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "console_text",
+      "persistentUuid": "e3b865ed-eb11-491b-9476-642a079af8dd",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Console Window\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 24,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Console Window\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 24,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "console_input",
+      "persistentUuid": "ae9c7d48-1457-4e5d-8113-8f5d5a5bd867",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 24,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false,
+        "spellCheck": false,
+        "paddingX": 2,
+        "paddingY": 1,
+        "textAlign": "left",
+        "maxLength": 0
+      }
+    },
+    {
+      "assetStoreId": "26f7912e497fefccd32817a0c24533c9304633b47c6e556065dc498219877e81",
+      "name": "console_enter",
+      "persistentUuid": "29aee0e0-9ffe-4a78-89fd-0034254f8879",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Console Enter Button",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 1,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2,
+        "LabelText": "Enter"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3232,6 +3509,18 @@
       },
       {
         "objectName": "elephant_statue"
+      },
+      {
+        "objectName": "console_bg"
+      },
+      {
+        "objectName": "console_text"
+      },
+      {
+        "objectName": "console_input"
+      },
+      {
+        "objectName": "console_enter"
       }
     ]
   },
@@ -4401,6 +4690,290 @@
               "target": "Save Game Position"
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyPressed"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Tab\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "console_switch",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "console_switch",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Link",
+                      "include": {
+                        "includeConfig": 0
+                      },
+                      "target": "Move Console"
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "console_switch",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "console_items",
+                        "=",
+                        "player_character.X()+10*SceneWindowWidth()",
+                        "=",
+                        "player_character.Y()+10*SceneWindowHeight()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "console_enter",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "temp_int",
+                "=",
+                "StrLength(console_input.Text::Value())"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "temp_int",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RegEx::Split"
+                  },
+                  "parameters": [
+                    "text_formatter",
+                    "NewLine()",
+                    "\"\"",
+                    "console_text.Text::Value()",
+                    "\"text_formatter\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushString"
+                  },
+                  "parameters": [
+                    "text_formatter",
+                    "console_input.Text::Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "temp_int",
+                    "=",
+                    "VariableChildCount(text_formatter)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "console_input",
+                    "Text",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "text_formatter4",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "temp_int",
+                        ">",
+                        "12"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Repeat",
+                      "repeatExpression": "temp_int-12",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "RemoveVariableAt"
+                          },
+                          "parameters": [
+                            "text_formatter",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
+                  "iterableVariableName": "text_formatter",
+                  "valueIteratorVariableName": "text_formatter3",
+                  "keyIteratorVariableName": "",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "text_formatter4",
+                        "=",
+                        "text_formatter4+VariableString(text_formatter3)+NewLine()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "text_formatter4",
+                        "=",
+                        "SubStr(text_formatter4, 0, StrLength(text_formatter4)-1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "console_text",
+                        "Text",
+                        "=",
+                        "text_formatter4"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4619,6 +5192,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TileMap",
+      "type": "TileMap::TileMapBehavior"
     },
     {
       "name": "TopDownMovement",

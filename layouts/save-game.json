@@ -29,16 +29,19 @@
   "variables": [
     {
       "name": "save_width",
+      "persistentUuid": "40699e94-851a-4ddf-bfb2-baa2df601ffa",
       "type": "number",
       "value": 400
     },
     {
       "name": "save_height",
+      "persistentUuid": "77770ee1-1872-4ca3-9f55-aaba1ea10126",
       "type": "number",
       "value": 50
     },
     {
       "name": "save_local",
+      "persistentUuid": "2b97d2cc-790a-4d3a-8556-40b70988d2ca",
       "type": "structure",
       "children": []
     }

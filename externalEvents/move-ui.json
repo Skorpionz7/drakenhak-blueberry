@@ -69,21 +69,56 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::ForEach",
-      "object": "menu_movers",
-      "conditions": [],
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "console_switch",
+            "False",
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
             "value": "SetXY"
           },
           "parameters": [
-            "menu_movers",
+            "console_items",
             "=",
             "player_character.X()+10*SceneWindowWidth()",
             "=",
             "player_character.Y()+10*SceneWindowHeight()"
           ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "console_switch",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Move Console"
         }
       ]
     }

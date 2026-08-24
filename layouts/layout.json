@@ -29,6 +29,7 @@
   "variables": [
     {
       "name": "anim_position",
+      "persistentUuid": "45ada853-2419-4e2c-9c18-ae106470057f",
       "type": "number",
       "value": 0
     }

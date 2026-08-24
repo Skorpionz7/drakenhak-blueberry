@@ -34,6 +34,7 @@
   "variables": [
     {
       "name": "text_area_text",
+      "persistentUuid": "876350e7-963f-4005-ba9a-d5ebcb89e1bf",
       "type": "string",
       "value": ""
     }

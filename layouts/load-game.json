@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.5290357402156837,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -29,11 +29,13 @@
   "variables": [
     {
       "name": "load_width",
+      "persistentUuid": "44ecad09-040b-4d96-9e30-ab3fe4ce7526",
       "type": "number",
       "value": 0
     },
     {
       "name": "load_height",
+      "persistentUuid": "4b20c4bc-63a0-4def-9712-93dbe48fdc7f",
       "type": "number",
       "value": 0
     }
