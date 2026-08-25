@@ -4931,7 +4931,52 @@
                             "=",
                             "earth_golem.CenterX()",
                             "=",
-                            "earth_golem.CenterY()"
+                            "earth_golem.Y()+earth_golem.Height()-player_character.Height()/2+1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Else",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "text_formatter[1]",
+                            "=",
+                            "\"home\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "player_character",
+                            "=",
+                            "elephant_statue.CenterX()",
+                            "=",
+                            "elephant_statue.Y()+elephant_statue.Height()-player_character.Height()/2+1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetZOrder"
+                          },
+                          "parameters": [
+                            "player_character",
+                            "=",
+                            "player_character.Y()+player_character.Height()"
                           ]
                         }
                       ]

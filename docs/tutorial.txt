@@ -7,6 +7,7 @@ IN MAP SCREEN
 Press TAB to open the console.
 Write "tele [location]" to teleport to main locations
 Location "fishgolem" teleports you to the fish golem's house
+Location "home" teleports you home
 
 Pick up the butterflies with the E key and bring them to a reed bed; doing so will cause a fish to appear.
 
@@ -16,3 +17,8 @@ Walk up to a character and press E to learn what they’re up to.
 
 -------
 
+IN LAYOUT SCREEN
+
+You can only delete items from the inventory area on the map screen where newly purchased items appear.
+
+-------
