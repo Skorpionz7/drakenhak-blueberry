@@ -1,0 +1,136 @@
+{
+  "associatedLayout": "Game Position",
+  "name": "Print Command",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "RegEx::Split"
+          },
+          "parameters": [
+            "text_formatter",
+            "NewLine()",
+            "\"\"",
+            "console_text.Text::Value()",
+            "\"text_formatter\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PushString"
+          },
+          "parameters": [
+            "text_formatter",
+            "cmd_print_line"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "cmd_size",
+            "=",
+            "VariableChildCount(text_formatter)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "text_formatter4",
+            "=",
+            "\"\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "cmd_size",
+                ">",
+                "12"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "cmd_size - 12",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveVariableAt"
+                  },
+                  "parameters": [
+                    "text_formatter",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "text_formatter",
+          "valueIteratorVariableName": "text_formatter3",
+          "keyIteratorVariableName": "",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "text_formatter4",
+                "=",
+                "text_formatter4+VariableString(text_formatter3)+NewLine()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "text_formatter4",
+                "=",
+                "SubStr(text_formatter4, 0, StrLength(text_formatter4)-1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "console_text",
+                "Text",
+                "=",
+                "text_formatter4"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

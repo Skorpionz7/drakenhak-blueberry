@@ -235,7 +235,7 @@
       "value": ""
     },
     {
-      "name": "temp_int",
+      "name": "cmd_size",
       "persistentUuid": "0e151332-cb87-460e-97ad-a5487652ae62",
       "type": "number",
       "value": 0
@@ -245,6 +245,12 @@
       "persistentUuid": "8ef0b00a-35a5-406e-8dbf-06626dfa9acf",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "cmd_print_line",
+      "persistentUuid": "858c1bb3-f62f-4589-aaff-271600a212f2",
+      "type": "string",
+      "value": ""
     }
   ],
   "instances": [
@@ -4814,7 +4820,7 @@
                 "value": "SetNumberVariable"
               },
               "parameters": [
-                "temp_int",
+                "cmd_size",
                 "=",
                 "StrLength(console_input.Text::Value())"
               ]
@@ -4829,7 +4835,7 @@
                     "value": "NumberVariable"
                   },
                   "parameters": [
-                    "temp_int",
+                    "cmd_size",
                     ">",
                     "0"
                   ]
@@ -4838,111 +4844,22 @@
               "actions": [
                 {
                   "type": {
-                    "value": "RegEx::Split"
-                  },
-                  "parameters": [
-                    "text_formatter",
-                    "NewLine()",
-                    "\"\"",
-                    "console_text.Text::Value()",
-                    "\"text_formatter\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PushString"
-                  },
-                  "parameters": [
-                    "text_formatter",
-                    "console_input.Text::Value()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "temp_int",
-                    "=",
-                    "VariableChildCount(text_formatter)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "console_input",
-                    "Text",
-                    "=",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "text_formatter4",
+                    "cmd_print_line",
                     "=",
-                    "\"\""
+                    "console_input.Text::Value()"
                   ]
                 }
               ],
               "events": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "temp_int",
-                        ">",
-                        "12"
-                      ]
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Repeat",
-                      "repeatExpression": "temp_int-12",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "RemoveVariableAt"
-                          },
-                          "parameters": [
-                            "text_formatter",
-                            "0"
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::ForEachChildVariable",
-                  "iterableVariableName": "text_formatter",
-                  "valueIteratorVariableName": "text_formatter3",
-                  "keyIteratorVariableName": "",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "text_formatter4",
-                        "=",
-                        "text_formatter4+VariableString(text_formatter3)+NewLine()"
-                      ]
-                    }
-                  ]
+                  "type": "BuiltinCommonInstructions::Link",
+                  "include": {
+                    "includeConfig": 0
+                  },
+                  "target": "Print Command"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -4950,12 +4867,15 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "SetStringVariable"
+                        "value": "RegEx::Split"
                       },
                       "parameters": [
-                        "text_formatter4",
-                        "=",
-                        "SubStr(text_formatter4, 0, StrLength(text_formatter4)-1)"
+                        "text_formatter",
+                        "\" \"",
+                        "\"\"",
+                        "console_input.Text::Value()",
+                        "\"text_formatter\"",
+                        ""
                       ]
                     },
                     {
@@ -4963,11 +4883,65 @@
                         "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "console_text",
+                        "console_input",
                         "Text",
                         "=",
-                        "text_formatter4"
+                        "\"\""
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "text_formatter[0]",
+                        "=",
+                        "\"tele\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "text_formatter[1]",
+                            "=",
+                            "\"fishgolem\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "player_character",
+                            "=",
+                            "earth_golem.CenterX()",
+                            "=",
+                            "earth_golem.CenterY()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Link",
+                      "include": {
+                        "includeConfig": 0
+                      },
+                      "target": "Move UI"
                     }
                   ]
                 }

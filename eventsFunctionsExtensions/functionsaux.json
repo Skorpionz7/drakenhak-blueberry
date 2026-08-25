@@ -18,11 +18,13 @@
   "globalVariables": [
     {
       "name": "dialog_box_on",
+      "persistentUuid": "f45cda72-d77c-4209-a400-238636cca676",
       "type": "boolean",
       "value": false
     },
     {
       "name": "dialog_type",
+      "persistentUuid": "1ba19f9f-b9f8-4fea-a2fd-8a27ed69e14c",
       "type": "string",
       "value": ""
     }
