@@ -1,13 +1,13 @@
 {
-  "b": 224,
+  "b": 27,
   "disableInputWhenNotFocused": true,
   "mangledName": "Layout",
   "name": "Layout",
-  "r": 189,
+  "r": 208,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 16,
+  "v": 2,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",

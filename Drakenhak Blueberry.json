@@ -1299,6 +1299,62 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Water/Run/ed3cae567d66ddf923fdc0dadbc54b3241399ca2030ddb8f872ae2153e5b0d5b_Run_02.wav",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/Two tone effect.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "baeeb718f7142aaca06988016a135804da1068bbc739ea8a568f0faf8cfbe938_Two tone effect.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/baeeb718f7142aaca06988016a135804da1068bbc739ea8a568f0faf8cfbe938_Two tone effect.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Sequence_01.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "b0860a845d3fda2d85a990c61c63b74d051a4fa21425dd24d353b3d9d4011f15_Sequence_01.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/b0860a845d3fda2d85a990c61c63b74d051a4fa21425dd24d353b3d9d4011f15_Sequence_01.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/hello_male.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/hello_male.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hello_female.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/hello_female.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/graphics/Wild_blueberry_fields_bg.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/Wild_blueberry_fields_bg.jpg",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1556,13 +1612,13 @@
           "name": "id",
           "persistentUuid": "a0968671-e8e5-4009-b2c1-c5b6c805d543",
           "type": "number",
-          "value": 1377
+          "value": 0
         },
         {
           "name": "money",
           "persistentUuid": "f1276c69-27c3-4902-ad51-af17916d6579",
           "type": "number",
-          "value": 1337
+          "value": 0
         },
         {
           "name": "player_rot",
@@ -1793,7 +1849,7 @@
           "name": "volume",
           "persistentUuid": "7f86dcc6-36db-457f-ae10-c736952cf515",
           "type": "number",
-          "value": 0
+          "value": 50
         }
       ]
     }

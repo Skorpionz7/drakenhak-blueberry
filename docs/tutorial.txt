@@ -19,6 +19,6 @@ Walk up to a character and press E to learn what they’re up to.
 
 IN LAYOUT SCREEN
 
-You can only delete items from the inventory area on the map screen where newly purchased items appear.
+You can only sell and delete items from the inventory area on the map screen where newly purchased items appear.
 
 -------

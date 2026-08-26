@@ -600,6 +600,12 @@
       "stringProperties": [],
       "initialVariables": [
         {
+          "name": "sex",
+          "persistentUuid": "c5d3bef4-5d98-4426-aa33-70018d56b841",
+          "type": "string",
+          "value": "male"
+        },
+        {
           "name": "speed2",
           "type": "number",
           "value": 5
@@ -2971,53 +2977,69 @@
       "variables": [
         {
           "name": "say_text",
+          "persistentUuid": "25fd6c2f-8524-4749-828a-4e83e61be40c",
           "type": "string",
           "value": "Empty text x"
         },
         {
           "name": "x1",
+          "persistentUuid": "bad4c710-79e0-48d3-8fe0-7207b0f59f05",
           "type": "number",
           "value": 0
         },
         {
           "name": "x2",
+          "persistentUuid": "83879379-1598-4d58-8c10-dc7d5a361874",
           "type": "number",
           "value": 1000
         },
         {
           "name": "y1",
+          "persistentUuid": "88e19587-ec47-4777-999c-e1d6bcb94664",
           "type": "number",
           "value": 0
         },
         {
           "name": "y2",
+          "persistentUuid": "d6115d2b-53fe-4ab4-b3ed-60cd421ed514",
           "type": "number",
           "value": 1000
         },
         {
           "name": "speed1",
+          "persistentUuid": "b2ec2a93-31e8-4bda-ba39-b82a5cf3aa85",
           "type": "number",
           "value": 1
         },
         {
           "name": "speed2",
+          "persistentUuid": "1a9b739e-7b6b-44c2-b074-02b6d56b197a",
           "type": "number",
           "value": 10
         },
         {
           "name": "tween_z",
+          "persistentUuid": "e2cf09f1-e616-4166-a6de-31f9b92d5b7f",
           "type": "number",
           "value": 0
         },
         {
           "name": "tween_last",
+          "persistentUuid": "954751b1-e3f0-4ff3-b05a-4e44df433ebc",
           "type": "number",
           "value": 0
         },
         {
           "name": "last_z",
+          "persistentUuid": "26bc1516-f1c7-4c11-a104-02b089465bb4",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "sex",
+          "persistentUuid": "c5d3bef4-5d98-4426-aa33-70018d56b841",
+          "type": "string",
+          "value": "male"
         }
       ],
       "effects": [],
@@ -3895,6 +3917,18 @@
                     "player_character",
                     "carry"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "b0860a845d3fda2d85a990c61c63b74d051a4fa21425dd24d353b3d9d4011f15_Sequence_01.aac",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -4071,6 +4105,18 @@
                     "=",
                     "player_character.Y()+player_character.Height()+1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "b0860a845d3fda2d85a990c61c63b74d051a4fa21425dd24d353b3d9d4011f15_Sequence_01.aac",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             },
@@ -4151,6 +4197,68 @@
                       "parameters": [
                         "monster_dialogue_text",
                         "\"end_text\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringObjectVariable"
+                          },
+                          "parameters": [
+                            "talkers",
+                            "sex",
+                            "=",
+                            "\"male\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/hello_male.wav",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Else",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringObjectVariable"
+                          },
+                          "parameters": [
+                            "talkers",
+                            "sex",
+                            "=",
+                            "\"female\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/hello_female.ogg",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -4581,6 +4689,18 @@
                     "all_fish",
                     "=",
                     "reed_bed.ZOrder()+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "ed3cae567d66ddf923fdc0dadbc54b3241399ca2030ddb8f872ae2153e5b0d5b_Run_02.wav",
+                    "",
+                    "100",
+                    ""
                   ]
                 }
               ],
