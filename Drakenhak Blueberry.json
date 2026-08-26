@@ -1111,6 +1111,194 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3bd40ac788d44626fd640ec67ef04ab0364816b5e8c831f2077bff8805cfe689_Roboto-Bold.ttf",
           "name": "Roboto-Bold.ttf"
         }
+      },
+      {
+        "file": "assets/graphics/Pixel_art_Wizard_Portrait.svg.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/graphics/Pixel_art_Wizard_Portrait.svg.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Red Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f1e231bf9ea89b842ac63e17cc41cab0dd3a5d88916ca3454d89872e85c239d7_Red Button_Hovered.png",
+          "name": "Red Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Red Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/673facf2cabe26813a9ac066e93c005e264c6222557999e56582a0fe73216f3f_Red Button_Idle.png",
+          "name": "Red Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Red Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Red Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e3269fc6a93f1d6083564069b4d14c7e31df6bfc96d27f82c791d2210242315a_Red Button_Pressed.png",
+          "name": "Red Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/RedTinySwordsPixelSliderBorder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\RedTinySwordsPixelSliderBorder.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/Pixel Frog/e38a2f6c570e85bc9ffd2e6a34046678084749ac66136785afc3250e54946d4a_RedTinySwordsPixelSliderBorder.png",
+          "name": "RedTinySwordsPixelSliderBorder.png"
+        }
+      },
+      {
+        "file": "assets/RedTinySwordsPixelSliderFillBar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\RedTinySwordsPixelSliderFillBar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/Pixel Frog/28b269bf64d3c53c438ba7f674558d774302ee8f50bd186d5a9ce7b010af876b_RedTinySwordsPixelSliderFillBar.png",
+          "name": "RedTinySwordsPixelSliderFillBar.png"
+        }
+      },
+      {
+        "file": "assets/RedTinySwordsPixelSliderThumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\RedTinySwordsPixelSliderThumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/Pixel Frog/7cc421acb4e9e43a9261e1fc56c9bfe28bdcbd8f097bf1cd2977780331e1583b_RedTinySwordsPixelSliderThumb.png",
+          "name": "RedTinySwordsPixelSliderThumb.png"
+        }
+      },
+      {
+        "file": "assets/NotoSansArabicUI-Black.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\NotoSansArabicUI-Black.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/Pixel Frog/58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+          "name": "NotoSansArabicUI-Black.ttf"
+        }
+      },
+      {
+        "file": "assets/Green Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/bff6adc488c7379b21ceba34e9104e861791b2fbb54b4aae167fe90115b92fa3_Green Button_Hovered.png",
+          "name": "Green Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f46d20e99495562ee66ee2f26defdb0788588184bd30b1f7b951ae728ce63d2a_Green Button_Idle.png",
+          "name": "Green Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
+          "name": "Green Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Green Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3cfcef451f366e0586d68ae863db979bdeb2ec9453290b236ba3a1fbf19db418_Green Button With Shadow_Hovered.png",
+          "name": "Green Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Green Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/63f468aa943eb440db683045192c88a94de99bd6e3aa5fc0afc3d93dd8d39324_Green Button With Shadow_Idle.png",
+          "name": "Green Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Green Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3c957fd6edd0a38bee1807034ca83d582216e6e2f48058e413979f8b1f504e8b_Green Button With Shadow_Pressed.png",
+          "name": "Green Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Run_02.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "ed3cae567d66ddf923fdc0dadbc54b3241399ca2030ddb8f872ae2153e5b0d5b_Run_02.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Water/Run/ed3cae567d66ddf923fdc0dadbc54b3241399ca2030ddb8f872ae2153e5b0d5b_Run_02.wav",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -1348,41 +1536,49 @@
   "variables": [
     {
       "name": "save_game",
+      "persistentUuid": "4c68a76f-249f-40e1-933b-87c026d0f5c1",
       "type": "structure",
       "children": [
         {
           "name": "butterflies",
+          "persistentUuid": "536f6f06-2296-4d74-8cb4-6e1854a657f0",
           "type": "structure",
           "children": []
         },
         {
           "folded": true,
           "name": "fish",
+          "persistentUuid": "6fb9d67f-7983-4f62-aab2-1472509c88a8",
           "type": "structure",
           "children": []
         },
         {
           "name": "id",
+          "persistentUuid": "a0968671-e8e5-4009-b2c1-c5b6c805d543",
           "type": "number",
           "value": 1377
         },
         {
           "name": "money",
+          "persistentUuid": "f1276c69-27c3-4902-ad51-af17916d6579",
           "type": "number",
           "value": 1337
         },
         {
           "name": "player_rot",
+          "persistentUuid": "2eba6559-ffc3-44e9-8399-61c45139089f",
           "type": "number",
           "value": 0
         },
         {
           "name": "player_x",
+          "persistentUuid": "422ca768-1fe4-4100-824a-52f2d24dca9e",
           "type": "number",
           "value": 640
         },
         {
           "name": "player_y",
+          "persistentUuid": "1ff2ab04-ec15-4065-95b5-5b3167d501d8",
           "type": "number",
           "value": 360
         }
@@ -1390,110 +1586,132 @@
     },
     {
       "name": "temp1",
+      "persistentUuid": "67d52c05-7323-40e0-8b36-9fc7d4bc490b",
       "type": "number",
       "value": 0
     },
     {
       "name": "save_game_amount",
+      "persistentUuid": "8be7f838-cc7f-4b5a-87b1-77571414faff",
       "type": "number",
       "value": 27
     },
     {
       "name": "save_name",
+      "persistentUuid": "6d014ab7-3862-453b-bd59-f7dec03e6fd6",
       "type": "string",
       "value": "\"drakenhakblueberrysaves\""
     },
     {
       "name": "temp_i",
+      "persistentUuid": "12c34c47-8ade-4fbb-93b7-266221328005",
       "type": "number",
       "value": 0
     },
     {
       "name": "temp_i2",
+      "persistentUuid": "c8fe813b-d914-4c04-a639-e717011d9712",
       "type": "number",
       "value": 0
     },
     {
       "name": "save_names",
+      "persistentUuid": "14907880-0457-490e-bc3e-16f18e6f2d2d",
       "type": "structure",
       "children": []
     },
     {
       "name": "temp_string1",
+      "persistentUuid": "53c49e54-d60f-4912-974f-535fa44bc10d",
       "type": "string",
       "value": "0"
     },
     {
       "name": "savenames_name",
+      "persistentUuid": "b43a01fe-ac32-46f8-8164-03e659d75e8f",
       "type": "string",
       "value": "\"savenames\""
     },
     {
       "name": "temp_load1",
+      "persistentUuid": "c6c782d9-2aff-4443-899a-1c2732a05198",
       "type": "string",
       "value": ""
     },
     {
       "name": "start",
+      "persistentUuid": "b746d946-d83f-482b-956d-2cd6ac9a42c5",
       "type": "boolean",
       "value": true
     },
     {
       "name": "temp_string2",
+      "persistentUuid": "0b0ff1dc-9a12-4570-ad56-5de774227aaf",
       "type": "string",
       "value": "0"
     },
     {
       "name": "temp_string3",
+      "persistentUuid": "a17cc6cf-c53d-4dbe-83cf-a02c1577e3fa",
       "type": "string",
       "value": "0"
     },
     {
       "name": "fly_to_search",
+      "persistentUuid": "623c2e95-f1c0-4588-89c3-439fbba79a6c",
       "type": "boolean",
       "value": false
     },
     {
       "name": "start_new_game",
+      "persistentUuid": "442ab890-d57b-4577-97c7-bd259e5f1081",
       "type": "boolean",
       "value": false
     },
     {
       "name": "monster_animation_amount",
+      "persistentUuid": "46a99850-d5a5-4fb2-be3a-826344d34536",
       "type": "number",
       "value": 22
     },
     {
       "name": "dialog_prompt_on",
+      "persistentUuid": "effbcc80-ab12-4381-ac4e-8af69d657a3f",
       "type": "boolean",
       "value": false
     },
     {
       "name": "butterfly_position",
+      "persistentUuid": "d732710f-304a-4e46-b4b8-77a8fe7f73f6",
       "type": "structure",
       "children": [
         {
           "name": "amount",
+          "persistentUuid": "4cff2581-71f7-47fc-a5ac-a734c897d0b8",
           "type": "number",
           "value": 3
         },
         {
           "name": "x",
+          "persistentUuid": "265629f6-8798-405b-b4bf-006b50b1d18f",
           "type": "number",
           "value": 1320
         },
         {
           "name": "x2",
+          "persistentUuid": "f300bc10-f966-4e3c-af91-5c7b9cf750fb",
           "type": "number",
           "value": 2120
         },
         {
           "name": "y",
+          "persistentUuid": "38135f62-b48a-4486-a369-529aea4edebd",
           "type": "number",
           "value": 80
         },
         {
           "name": "y2",
+          "persistentUuid": "1dd93a30-e33c-4a3c-9c53-edd59410f471",
           "type": "number",
           "value": 520
         }
@@ -1501,57 +1719,81 @@
     },
     {
       "name": "random_number1",
+      "persistentUuid": "a3fe70ab-b5de-4d2d-9f39-29f9597e7ba2",
       "type": "number",
       "value": 0
     },
     {
       "name": "fish_struct",
+      "persistentUuid": "250864da-10dc-4228-b81f-9d07dc6e2a22",
       "type": "structure",
       "children": [
         {
           "name": "1",
+          "persistentUuid": "a0d5ef1f-6577-460a-ab2c-bcdbacb756e3",
           "type": "string",
           "value": "Brown_Trout"
         },
         {
           "name": "2",
+          "persistentUuid": "2131628a-c6cd-4c22-b674-8c0855d7fa0f",
           "type": "string",
           "value": "Clownfish"
         },
         {
           "name": "3",
+          "persistentUuid": "f5fa5595-e219-4d22-91d2-a0afee258d35",
           "type": "string",
           "value": "Eel"
         },
         {
           "name": "4",
+          "persistentUuid": "620de14a-f568-496c-95de-1af4765b2f70",
           "type": "string",
           "value": "Fish_Bone"
         },
         {
           "name": "5",
+          "persistentUuid": "eafc9644-e9ea-4b78-9447-96bde4c6ee2f",
           "type": "string",
           "value": "Fossil"
         },
         {
           "name": "6",
+          "persistentUuid": "add624ae-ddac-4c48-be19-c3ba732737a4",
           "type": "string",
           "value": "Jellyfish"
         },
         {
           "name": "7",
+          "persistentUuid": "112eed76-5f9b-4cb5-919a-d8c8e63d8ba2",
           "type": "string",
           "value": "Lake_Trout"
         },
         {
           "name": "8",
+          "persistentUuid": "bd01d857-9cf1-4dcb-a4ca-c7d2da236e73",
           "type": "string",
           "value": "Octopus"
         },
         {
           "name": "9",
+          "persistentUuid": "81fa2fb4-50e5-4c2f-9352-3d69db6d1309",
           "type": "string",
           "value": "Tropical_Fish"
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "persistentUuid": "09c49c7a-e00f-4fcf-9d9f-cdd9603d4dbd",
+      "type": "structure",
+      "children": [
+        {
+          "name": "volume",
+          "persistentUuid": "7f86dcc6-36db-457f-ae10-c736952cf515",
+          "type": "number",
+          "value": 0
         }
       ]
     }
@@ -1580,6 +1822,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-position"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/options-window"
     }
   ],
   "externalEvents": [
@@ -1688,6 +1934,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/regex"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
     }
   ],
   "externalLayouts": []

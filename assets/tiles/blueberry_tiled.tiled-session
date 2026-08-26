@@ -10,11 +10,11 @@
             "scaleInEditor": 1
         },
         "blueberry_map.json": {
-            "scale": 1,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 1314,
-                "y": 1297
+                "x": 1337.3333333333333,
+                "y": 2170.6666666666665
             }
         },
         "blueberry_map.json#blueberry_tiled": {

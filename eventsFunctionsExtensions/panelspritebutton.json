@@ -3987,6 +3987,713 @@
       "variants": [
         {
           "areaMaxX": 192,
+          "areaMaxY": 69,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "name": "Green Button With Shadow2",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "persistentUuid": "db9264d8-31e5-488f-aeb2-b2c3089e0059",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "TextStyleState",
+                  "type": "PanelSpriteButton::TextStyleState",
+                  "ShouldEnableOutlineOnHover": false,
+                  "HoverColor": "",
+                  "ShouldEnableShadowOnHover": false,
+                  "HoverFontSize": 0,
+                  "IsHovered": false,
+                  "IdleFontSize": 0,
+                  "IdleColor": ""
+                }
+              ],
+              "string": "BUTTON",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "BUTTON",
+                "font": "CantoraOne-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 30,
+                "lineHeight": 0,
+                "color": "255;255;255"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Idle",
+              "persistentUuid": "cfa943ea-50db-41ca-8f33-4e217b90f550",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "State",
+                  "persistentUuid": "56258c75-89b8-416d-9b9e-4ba89e1c97fe",
+                  "type": "string",
+                  "value": "Idle"
+                }
+              ],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteButton::ButtonFSM",
+                  "serializedBehavior": {
+                    "name": "ButtonFSM",
+                    "type": "PanelSpriteButton::ButtonFSM",
+                    "ShouldCheckHovering": true
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Hovered",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Tween",
+                  "type": "Tween::TweenBehavior",
+                  "serializedBehavior": {
+                    "name": "Tween",
+                    "type": "Tween::TweenBehavior"
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Pressed",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "name": "BitmapLabel",
+              "persistentUuid": "1666107f-af08-4793-8719-a83c6f39b932",
+              "type": "BitmapText::BitmapTextObject",
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "BitmapTextStyleState",
+                  "type": "PanelSpriteButton::BitmapTextStyleState",
+                  "HoverColor": "",
+                  "HoverPrefix": "",
+                  "HoverSuffix": "",
+                  "IsHovered": false,
+                  "IdleText": "",
+                  "IdleColor": ""
+                }
+              ],
+              "content": {
+                "text": "Text",
+                "opacity": 255,
+                "scale": 1,
+                "fontSize": 20,
+                "tint": "255;255;255",
+                "bitmapFontResourceName": "",
+                "textureAtlasResourceName": "",
+                "align": "center",
+                "verticalTextAlignment": "center"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              },
+              {
+                "objectName": "BitmapLabel"
+              }
+            ]
+          },
+          "objectsGroups": [
+            {
+              "name": "Background",
+              "objects": [
+                {
+                  "name": "Idle"
+                },
+                {
+                  "name": "Hovered"
+                },
+                {
+                  "name": "Pressed"
+                }
+              ]
+            },
+            {
+              "name": "Labels",
+              "objects": [
+                {
+                  "name": "Label"
+                },
+                {
+                  "name": "BitmapLabel"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "depth": 1,
+              "height": 64,
+              "layer": "",
+              "name": "Idle",
+              "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+              "width": 64,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 60,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Label",
+              "persistentUuid": "0fc63b9b-9e62-48c4-a3fa-576380a64e67",
+              "width": 188,
+              "x": 2,
+              "y": 32,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridDepth": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridOffsetZ": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 3.6458333333333335,
+            "windowMask": false,
+            "selectedLayer": "",
+            "gameEditorMode": "instances-editor"
+          }
+        },
+        {
+          "areaMaxX": 256,
+          "areaMaxY": 106,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "name": "Red Button2",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "persistentUuid": "41cafc4c-bb3b-41c1-904d-55f6b468c2e3",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "TextStyleState",
+                  "type": "PanelSpriteButton::TextStyleState",
+                  "ShouldEnableOutlineOnHover": false,
+                  "HoverColor": "",
+                  "ShouldEnableShadowOnHover": false,
+                  "HoverFontSize": 0,
+                  "IsHovered": false,
+                  "IdleFontSize": 0,
+                  "IdleColor": ""
+                }
+              ],
+              "string": "Save & Exit",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 30,
+              "color": {
+                "b": 16,
+                "g": 38,
+                "r": 111
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Save & Exit",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 30,
+                "lineHeight": 0,
+                "color": "111;38;16"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Idle",
+              "rightMargin": 16,
+              "texture": "Red Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "State",
+                  "type": "string",
+                  "value": "Idle"
+                }
+              ],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteButton::ButtonFSM",
+                  "serializedBehavior": {
+                    "name": "ButtonFSM",
+                    "type": "PanelSpriteButton::ButtonFSM",
+                    "ShouldCheckHovering": true
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Hovered",
+              "rightMargin": 16,
+              "texture": "Red Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Tween",
+                  "type": "Tween::TweenBehavior",
+                  "serializedBehavior": {
+                    "name": "Tween",
+                    "type": "Tween::TweenBehavior"
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Pressed",
+              "rightMargin": 16,
+              "texture": "Red Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 32,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "name": "BitmapLabel",
+              "type": "BitmapText::BitmapTextObject",
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "BitmapTextStyleState",
+                  "type": "PanelSpriteButton::BitmapTextStyleState",
+                  "HoverColor": "",
+                  "HoverPrefix": "",
+                  "HoverSuffix": "",
+                  "IsHovered": false,
+                  "IdleText": "",
+                  "IdleColor": ""
+                }
+              ],
+              "content": {
+                "text": "Text",
+                "opacity": 255,
+                "scale": 1,
+                "fontSize": 20,
+                "tint": "255;255;255",
+                "bitmapFontResourceName": "",
+                "textureAtlasResourceName": "",
+                "align": "center",
+                "verticalTextAlignment": "center"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              },
+              {
+                "objectName": "BitmapLabel"
+              }
+            ]
+          },
+          "objectsGroups": [
+            {
+              "name": "Background",
+              "objects": [
+                {
+                  "name": "Idle"
+                },
+                {
+                  "name": "Hovered"
+                },
+                {
+                  "name": "Pressed"
+                }
+              ]
+            },
+            {
+              "name": "Labels",
+              "objects": [
+                {
+                  "name": "Label"
+                },
+                {
+                  "name": "BitmapLabel"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "depth": 1,
+              "height": 64,
+              "layer": "",
+              "name": "Idle",
+              "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+              "width": 64,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 81,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Label",
+              "persistentUuid": "aa4bd569-b00c-44e5-8b4c-5fb6742d5bcb",
+              "width": 240,
+              "x": 8,
+              "y": 48,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridDepth": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridOffsetZ": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 2.734375,
+            "windowMask": false,
+            "selectedLayer": "",
+            "gameEditorMode": "instances-editor"
+          }
+        },
+        {
+          "areaMaxX": 192,
           "areaMaxY": 64,
           "areaMaxZ": 64,
           "areaMinX": 0,
@@ -7370,6 +8077,1017 @@
               "persistentUuid": "c7a477d0-e3f5-4e10-8b11-352dd89768f1",
               "width": 186,
               "x": 3,
+              "y": 32,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": []
+        },
+        {
+          "areaMaxX": 256,
+          "areaMaxY": 106,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreAssetId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+          "assetStoreOriginalName": "Red Button",
+          "name": "Red Button",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "TextStyleState",
+                  "type": "PanelSpriteButton::TextStyleState",
+                  "ShouldEnableOutlineOnHover": false,
+                  "HoverColor": "",
+                  "ShouldEnableShadowOnHover": false,
+                  "HoverFontSize": 0,
+                  "IsHovered": false,
+                  "IdleFontSize": 0,
+                  "IdleColor": ""
+                }
+              ],
+              "string": "Button",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 16,
+                "g": 38,
+                "r": 111
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Button",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 60,
+                "lineHeight": 0,
+                "color": "111;38;16"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Idle",
+              "rightMargin": 16,
+              "texture": "Red Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "State",
+                  "type": "string",
+                  "value": "Idle"
+                }
+              ],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteButton::ButtonFSM",
+                  "serializedBehavior": {
+                    "name": "ButtonFSM",
+                    "type": "PanelSpriteButton::ButtonFSM",
+                    "ShouldCheckHovering": true
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Hovered",
+              "rightMargin": 16,
+              "texture": "Red Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Tween",
+                  "type": "Tween::TweenBehavior",
+                  "serializedBehavior": {
+                    "name": "Tween",
+                    "type": "Tween::TweenBehavior"
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Pressed",
+              "rightMargin": 16,
+              "texture": "Red Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 32,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "name": "BitmapLabel",
+              "type": "BitmapText::BitmapTextObject",
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "BitmapTextStyleState",
+                  "type": "PanelSpriteButton::BitmapTextStyleState",
+                  "HoverColor": "",
+                  "HoverPrefix": "",
+                  "HoverSuffix": "",
+                  "IsHovered": false,
+                  "IdleText": "",
+                  "IdleColor": ""
+                }
+              ],
+              "content": {
+                "text": "Text",
+                "opacity": 255,
+                "scale": 1,
+                "fontSize": 20,
+                "tint": "255;255;255",
+                "bitmapFontResourceName": "",
+                "textureAtlasResourceName": "",
+                "align": "center",
+                "verticalTextAlignment": "center"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              },
+              {
+                "objectName": "BitmapLabel"
+              }
+            ]
+          },
+          "objectsGroups": [
+            {
+              "name": "Background",
+              "objects": [
+                {
+                  "name": "Idle"
+                },
+                {
+                  "name": "Hovered"
+                },
+                {
+                  "name": "Pressed"
+                }
+              ]
+            },
+            {
+              "name": "Labels",
+              "objects": [
+                {
+                  "name": "Label"
+                },
+                {
+                  "name": "BitmapLabel"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "depth": 1,
+              "height": 64,
+              "layer": "",
+              "name": "Idle",
+              "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+              "width": 64,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 81,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Label",
+              "persistentUuid": "aa4bd569-b00c-44e5-8b4c-5fb6742d5bcb",
+              "width": 240,
+              "x": 8,
+              "y": 48,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": []
+        },
+        {
+          "areaMaxX": 256,
+          "areaMaxY": 106,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreAssetId": "b44dba91245ff1ac84a7b450e078194f19321d135fd8a67cd19bc9cb3403fba5",
+          "assetStoreOriginalName": "Green Button",
+          "name": "Green Button",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "TextStyleState",
+                  "type": "PanelSpriteButton::TextStyleState",
+                  "ShouldEnableOutlineOnHover": false,
+                  "HoverColor": "",
+                  "ShouldEnableShadowOnHover": false,
+                  "HoverFontSize": 0,
+                  "IsHovered": false,
+                  "IdleFontSize": 0,
+                  "IdleColor": ""
+                }
+              ],
+              "string": "Button",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 60,
+              "color": {
+                "b": 29,
+                "g": 99,
+                "r": 62
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Button",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 60,
+                "lineHeight": 0,
+                "color": "62;99;29"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Idle",
+              "rightMargin": 16,
+              "texture": "Green Button_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "State",
+                  "type": "string",
+                  "value": "Idle"
+                }
+              ],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteButton::ButtonFSM",
+                  "serializedBehavior": {
+                    "name": "ButtonFSM",
+                    "type": "PanelSpriteButton::ButtonFSM",
+                    "ShouldCheckHovering": true
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Hovered",
+              "rightMargin": 16,
+              "texture": "Green Button_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Tween",
+                  "type": "Tween::TweenBehavior",
+                  "serializedBehavior": {
+                    "name": "Tween",
+                    "type": "Tween::TweenBehavior"
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "name": "Pressed",
+              "rightMargin": 16,
+              "texture": "Green Button_Pressed.png",
+              "tiled": false,
+              "topMargin": 32,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "name": "BitmapLabel",
+              "type": "BitmapText::BitmapTextObject",
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "BitmapTextStyleState",
+                  "type": "PanelSpriteButton::BitmapTextStyleState",
+                  "HoverColor": "",
+                  "HoverPrefix": "",
+                  "HoverSuffix": "",
+                  "IsHovered": false,
+                  "IdleText": "",
+                  "IdleColor": ""
+                }
+              ],
+              "content": {
+                "text": "Text",
+                "opacity": 255,
+                "scale": 1,
+                "fontSize": 20,
+                "tint": "255;255;255",
+                "bitmapFontResourceName": "",
+                "textureAtlasResourceName": "",
+                "align": "center",
+                "verticalTextAlignment": "center"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              },
+              {
+                "objectName": "BitmapLabel"
+              }
+            ]
+          },
+          "objectsGroups": [
+            {
+              "name": "Background",
+              "objects": [
+                {
+                  "name": "Idle"
+                },
+                {
+                  "name": "Hovered"
+                },
+                {
+                  "name": "Pressed"
+                }
+              ]
+            },
+            {
+              "name": "Labels",
+              "objects": [
+                {
+                  "name": "Label"
+                },
+                {
+                  "name": "BitmapLabel"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "depth": 1,
+              "height": 64,
+              "layer": "",
+              "name": "Idle",
+              "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+              "width": 64,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 80,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Label",
+              "persistentUuid": "114155f3-90e9-461e-a4cd-6c7b231b4c88",
+              "width": 240,
+              "x": 8,
+              "y": 48,
+              "zOrder": 2,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": []
+        },
+        {
+          "areaMaxX": 192,
+          "areaMaxY": 69,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "assetStoreAssetId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+          "assetStoreOriginalName": "Green Button With Shadow",
+          "name": "Green Button With Shadow",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "Label",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "TextStyleState",
+                  "type": "PanelSpriteButton::TextStyleState",
+                  "ShouldEnableOutlineOnHover": false,
+                  "HoverColor": "",
+                  "ShouldEnableShadowOnHover": false,
+                  "HoverFontSize": 0,
+                  "IsHovered": false,
+                  "IdleFontSize": 0,
+                  "IdleColor": ""
+                }
+              ],
+              "string": "BUTTON",
+              "font": "CantoraOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "BUTTON",
+                "font": "CantoraOne-Regular.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 40,
+                "lineHeight": 0,
+                "color": "255;255;255"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Idle",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Idle.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [
+                {
+                  "folded": true,
+                  "name": "State",
+                  "type": "string",
+                  "value": "Idle"
+                }
+              ],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "ButtonFSM",
+                  "type": "PanelSpriteButton::ButtonFSM",
+                  "serializedBehavior": {
+                    "name": "ButtonFSM",
+                    "type": "PanelSpriteButton::ButtonFSM",
+                    "ShouldCheckHovering": true
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Hovered",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Hovered.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "Tween",
+                  "type": "Tween::TweenBehavior",
+                  "serializedBehavior": {
+                    "name": "Tween",
+                    "type": "Tween::TweenBehavior"
+                  }
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 16,
+              "height": 69,
+              "leftMargin": 16,
+              "name": "Pressed",
+              "rightMargin": 16,
+              "texture": "Green Button With Shadow_Pressed.png",
+              "tiled": false,
+              "topMargin": 16,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 192,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 2,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "topEdgeAnchor": 1,
+                  "useLegacyBottomAndRightAnchors": false
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "name": "BitmapLabel",
+              "type": "BitmapText::BitmapTextObject",
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "Anchor",
+                  "type": "AnchorBehavior::AnchorBehavior",
+                  "bottomEdgeAnchor": 4,
+                  "topEdgeAnchor": 4,
+                  "leftEdgeAnchor": 1,
+                  "relativeToOriginalWindowSize": true,
+                  "rightEdgeAnchor": 2,
+                  "useLegacyBottomAndRightAnchors": false
+                },
+                {
+                  "name": "BitmapTextStyleState",
+                  "type": "PanelSpriteButton::BitmapTextStyleState",
+                  "HoverColor": "",
+                  "HoverPrefix": "",
+                  "HoverSuffix": "",
+                  "IsHovered": false,
+                  "IdleText": "",
+                  "IdleColor": ""
+                }
+              ],
+              "content": {
+                "text": "Text",
+                "opacity": 255,
+                "scale": 1,
+                "fontSize": 20,
+                "tint": "255;255;255",
+                "bitmapFontResourceName": "",
+                "textureAtlasResourceName": "",
+                "align": "center",
+                "verticalTextAlignment": "center"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Label"
+              },
+              {
+                "objectName": "Idle"
+              },
+              {
+                "objectName": "Hovered"
+              },
+              {
+                "objectName": "Pressed"
+              },
+              {
+                "objectName": "BitmapLabel"
+              }
+            ]
+          },
+          "objectsGroups": [
+            {
+              "name": "Background",
+              "objects": [
+                {
+                  "name": "Idle"
+                },
+                {
+                  "name": "Hovered"
+                },
+                {
+                  "name": "Pressed"
+                }
+              ]
+            },
+            {
+              "name": "Labels",
+              "objects": [
+                {
+                  "name": "Label"
+                },
+                {
+                  "name": "BitmapLabel"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "depth": 1,
+              "height": 64,
+              "layer": "",
+              "name": "Idle",
+              "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+              "width": 64,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 60,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Label",
+              "persistentUuid": "0fc63b9b-9e62-48c4-a3fa-576380a64e67",
+              "width": 188,
+              "x": 2,
               "y": 32,
               "zOrder": 2,
               "numberProperties": [],

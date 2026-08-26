@@ -1,0 +1,704 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Options_32Window",
+  "name": "Options Window",
+  "r": 0,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 64,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5653158055126306,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wizard_bg",
+      "persistentUuid": "7a605357-af19-4223-8877-196c76f41b9f",
+      "width": 0,
+      "x": 87,
+      "y": 57,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 62.4390243902439,
+      "height": 66,
+      "layer": "",
+      "name": "save_button",
+      "persistentUuid": "a93ba5a3-eaf6-4d1b-a741-2db2d248882d",
+      "width": 200,
+      "x": 666,
+      "y": 620,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 166.5,
+      "height": 66,
+      "layer": "",
+      "name": "cancel_button",
+      "persistentUuid": "e17adac1-dc6b-4343-96bf-cc636eb9ac2e",
+      "width": 200,
+      "x": 866,
+      "y": 620,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "volume_slider",
+      "persistentUuid": "d923937e-6f06-43f4-9cc5-11a5e7f9e57d",
+      "width": 0,
+      "x": 683,
+      "y": 156,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "volume_label",
+      "persistentUuid": "f1045a5b-41a0-4e41-a565-c3194179d135",
+      "width": 0,
+      "x": 710,
+      "y": 91,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "reset_button",
+      "persistentUuid": "004fdb24-fe12-414f-af66-9661da9f8337",
+      "width": 0,
+      "x": 1088,
+      "y": 615,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sound_button",
+      "persistentUuid": "6f9156b5-dc44-4c02-8733-855d4d924ba0",
+      "width": 0,
+      "x": 692,
+      "y": 194,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "wizard_bg",
+      "persistentUuid": "f5b1db73-cacc-496c-965a-c4c3826fd1dc",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/graphics/Pixel_art_Wizard_Portrait.svg.webp",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 8
+                      },
+                      {
+                        "x": 492,
+                        "y": 8
+                      },
+                      {
+                        "x": 492,
+                        "y": 625
+                      },
+                      {
+                        "x": 8,
+                        "y": 625
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+      "name": "save_button",
+      "persistentUuid": "165a0ee0-1a65-482b-b853-8194a3c4432a",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Red Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Save & Exit"
+      }
+    },
+    {
+      "assetStoreId": "0d3f4843e5ebb7af30fd80adf19a1c5a14164c1283f344991dc2aa14067a1262",
+      "name": "cancel_button",
+      "persistentUuid": "28e95010-a4cb-4ecf-95a6-2842fa1c9c17",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Red Button2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Cancel"
+      }
+    },
+    {
+      "assetStoreId": "45afdba7f8f67b0fe35ab1d8625524652d2984479d262274601f45076aada07a",
+      "name": "volume_slider",
+      "persistentUuid": "b4c09f5a-aa2d-4b87-9b16-3740670d88d7",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "Red TinySwords Pixel Slider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 3,
+        "BarRightPadding": 3,
+        "BarBottomPadding": 4,
+        "LabelMargin": 4,
+        "MinValue": 0,
+        "MaxValue": 100,
+        "StepSize": 0.5
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "volume_label",
+      "persistentUuid": "e389452c-83cd-4303-bacb-5e3d4b69071a",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Volume",
+      "font": "Roboto-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 44,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Volume",
+        "font": "Roboto-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 44,
+        "lineHeight": 0,
+        "color": "255;0;0"
+      }
+    },
+    {
+      "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+      "name": "reset_button",
+      "persistentUuid": "7f6464c7-34cd-43e0-b694-b9f080e15a9b",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Green Button With Shadow2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Reset Values"
+      }
+    },
+    {
+      "assetStoreId": "569b45d3c7c34f7706563239938d04ca599016ff9857ee38c945c72330d4339e",
+      "name": "sound_button",
+      "persistentUuid": "e65829b2-ea8a-41ee-895f-3b2f8ced34e7",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Green Button With Shadow2",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25,
+        "LabelText": "Play Sound"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "wizard_bg"
+      },
+      {
+        "objectName": "save_button"
+      },
+      {
+        "objectName": "cancel_button"
+      },
+      {
+        "objectName": "volume_slider"
+      },
+      {
+        "objectName": "volume_label"
+      },
+      {
+        "objectName": "reset_button"
+      },
+      {
+        "objectName": "sound_button"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "volume_slider",
+            "=",
+            "options.volume",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "FunctionsAux::get_dialog_state"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "cancel_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "options.volume"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "sound_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "ed3cae567d66ddf923fdc0dadbc54b3241399ca2030ddb8f872ae2153e5b0d5b_Run_02.wav",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "reset_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+              },
+              "parameters": [
+                "volume_slider",
+                "=",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "volume_slider.Value()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "save_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "options.volume",
+                "=",
+                "volume_slider.Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "save_name",
+                "\"options\"",
+                "ToJSON(options)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+              },
+              "parameters": [
+                "volume_slider",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "volume_slider.Value()"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Dialog Footer"
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    }
+  ]
+}

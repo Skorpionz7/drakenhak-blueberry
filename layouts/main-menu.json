@@ -486,6 +486,26 @@
             "False",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ReadStringFromStorage"
+          },
+          "parameters": [
+            "save_name",
+            "\"options\"",
+            "",
+            "temp_load1"
+          ]
+        },
+        {
+          "type": {
+            "value": "JSONToVariableStructure2"
+          },
+          "parameters": [
+            "temp_load1",
+            "options"
+          ]
         }
       ]
     },
@@ -638,6 +658,32 @@
               "parameters": [
                 "",
                 "\"Load Game\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "options_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Options Window\"",
                 ""
               ]
             }
