@@ -11,7 +11,7 @@ Location "home" teleports you home
 
 Pick up the butterflies with the E key and bring them to a reed bed; doing so will cause a fish to appear.
 
-Tap a fish to see its details. After that, you have two paths: deliver the fish to the golem for a reward, or feed it to your dragons to help them grow stronger.
+Tap a fish (or any item) to see its details. After that, you have two paths: deliver the fish to the golem for a reward, or feed it to your dragons to help them grow stronger.
 
 Walk up to a character and press E to learn what they’re up to.
 
@@ -20,5 +20,7 @@ Walk up to a character and press E to learn what they’re up to.
 IN LAYOUT SCREEN
 
 You can only sell and delete items from the inventory area on the map screen where newly purchased items appear.
+
+So, buy a new slime (the beginning of dragon evolution) from the Layout screen, then move it to one of the six pens on the Map screen. Once it’s settled in, bring it some food, like fish or other items you can purchase from the Layout screen.
 
 -------
